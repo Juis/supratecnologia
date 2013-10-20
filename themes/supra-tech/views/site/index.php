@@ -20,7 +20,7 @@
 
                       <!-- Item 2 -->
 
-                      <article class="item item2 item--image"> <a href="regulacaodemarcacaoconsultaseexames">
+                      <article class="item item2 item--image"> <a href="regulacaodemarcacaoconsultasexames">
                         <div class="wrap"> <img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/536e8ae9.img-agendar.jpg'); ?>" >
                           <div class="item__content">
                             <div class="item__content__inner">
@@ -301,7 +301,7 @@ Atenção Básica</h1>
             <div class="container-primario">
 
                 <h2 class="marca-pequena fl">
-                    <a href="index.html" title="" class="block fl indent" onclick="window.location.href='index'">
+                    <a href="index" title="" class="block fl indent" onclick="window.location.href='index'">
                         <span>SUPRA TECNOLOGIA</span>
                     </a>
                 </h2>
@@ -375,7 +375,7 @@ Atenção Básica</h1>
                             <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
                         </a>
                        <!-- <small>
-                            <a href="materia.html" title="" class="mr5">BBC World</a> | há 20 minutos atrás
+                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
                         </small>-->
 
                     </div>
@@ -389,7 +389,7 @@ Atenção Básica</h1>
                             <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
                         </a>
                        <!-- <small>
-                            <a href="materia.html" title="" class="mr5">BBC World</a> | há 20 minutos atrás
+                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
                         </small>-->
 
                     </div>
@@ -402,7 +402,7 @@ Atenção Básica</h1>
                             <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
                         </a>
                        <!-- <small>
-                            <a href="materia.html" title="" class="mr5">BBC World</a> | há 20 minutos atrás
+                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
                         </small>-->
 
                     </div>
@@ -416,7 +416,7 @@ Atenção Básica</h1>
                             <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
                         </a>
                        <!-- <small>
-                            <a href="materia.html" title="" class="mr5">BBC World</a> | há 20 minutos atrás
+                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
                         </small>-->
 
                     </div>
@@ -426,7 +426,7 @@ Atenção Básica</h1>
                             <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
                         </a>
                        <!-- <small>
-                            <a href="materia.html" title="" class="mr5">BBC World</a> | há 20 minutos atrás
+                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
                         </small>-->
 
                     </div>
@@ -440,7 +440,7 @@ Atenção Básica</h1>
                             <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
                         </a>
                        <!-- <small>
-                            <a href="materia.html" title="" class="mr5">BBC World</a> | há 20 minutos atrás
+                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
                         </small>-->
 
                     </div>
@@ -453,7 +453,7 @@ Atenção Básica</h1>
                             <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
                         </a>
                        <!-- <small>
-                            <a href="materia.html" title="" class="mr5">BBC World</a> | há 20 minutos atrás
+                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
                         </small>-->
 
                     </div>
@@ -463,7 +463,7 @@ Atenção Básica</h1>
                             <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
                         </a>
                        <!-- <small>
-                            <a href="materia.html" title="" class="mr5">BBC World</a> | há 20 minutos atrás
+                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
                         </small>-->
 
                     </div>

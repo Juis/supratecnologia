@@ -58,7 +58,53 @@ class SiteController extends Controller
     public function actionMateria()
     {
         $this->render('materia');
-    }        
+    }      
+    
+    public function actionModulo()
+    {
+        $this->render('modulo');
+    }    
+    
+    public function actionMonitoramentoDosIndicesDoPmaq()
+    {
+        $this->render('monitoramentodosindicesdopmaq');
+    }  
+    
+    public function actionNovidades()
+    {
+        $this->render('novidades');
+    }  
+    
+    public function actionProntuarioMedicoAmbulatorial()
+    {
+        $this->render('prontuariomedicoambulatorial');
+    } 
+    
+    public function actionQuemSomos()
+    {
+        $this->render('quemsomos');
+    } 
+    
+    public function actionRegulacaoDeMarcacaoConsultasExames()
+    {
+        $this->render('regulacaodemarcacaoconsultasexames');
+    }    
+    
+    public function actionRegulacaoDeLeitos()
+    {
+        $this->render('regulacaodeleitos');
+    }
+    
+    public function actionWebMapasDaDengue()
+    {
+        $this->render('webmapasdadengue');
+    }       
+    
+    public function actionSolucoes()
+    {
+        $this->render('solucoes');
+    }       
+    
     public function action404()
     {
             if($error=Yii::app()->errorHandler->error)
