@@ -37,7 +37,7 @@
                     </figure>
 
                     <div class="grid-4">
-                         <h3 class="fullWidth nmt mb10"><a href="regulacaodemarcacaoconsultasexames" title="">Regulação de Marcação Consultas e Exames</a></h3>
+                         <h3 class="fullWidth nmt mb10"><a href="regulacaodemarcacaoconsultasexames" title="">Regulação e Marcação Consultas e Exames</a></h3>
                 <p class="descricao-modulo">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
 
                     <a href="regulacaodemarcacaoconsultasexames" title="" class="btn">veja mais</a>
@@ -53,7 +53,7 @@
                     </figure>
 
                     <div class="grid-4">
-                         <h3 class="fullWidth nmt mb10"><a href="prontuariomedicoambulatorial" title="">Prontuário Médico Ambulatorial</a></h3>
+                         <h3 class="fullWidth nmt mb10"><a href="prontuariomedicoambulatorial" title="">Prontuário Médico e SAME</a></h3>
                 <p class="descricao-modulo">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
 
                     <a href="prontuariomedicoambulatorial" title="" class="btn">veja mais</a>
@@ -69,7 +69,7 @@
                     </figure>
 
                     <div class="grid-4">
-                         <h3 class="fullWidth nmt mb10"><a href="gestaodeautorizacaodeinternacaohospitalar" title="">Gestão de Autorização de Internação Hospitalar (AIH)</a></h3>
+                         <h3 class="fullWidth nmt mb10"><a href="gestaodeautorizacaodeinternacaohospitalar" title="">Gestão de AIH</a></h3>
                 <p class="descricao-modulo">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
 
                     <a href="gestaodeautorizacaodeinternacaohospitalar" title="" class="btn">veja mais</a>
@@ -117,7 +117,7 @@
                     </figure>
 
                     <div class="grid-4">
-                         <h3 class="fullWidth nmt mb10"><a href="gestaodotratamentoforadedomiciliotfd" title="">Gestão do Tratamento fora de domicílio (TFD)</a></h3>
+                         <h3 class="fullWidth nmt mb10"><a href="gestaodotratamentoforadedomiciliotfd" title="">Gestão do TFD</a></h3>
                 <p class="descricao-modulo">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
 
                     <a href="gestaodotratamentoforadedomiciliotfd" title="" class="btn">veja mais</a>
@@ -149,9 +149,7 @@
                     </figure>
 
                     <div class="grid-4">
-                         <h3 class="fullWidth nmt mb10"><a href="gestaodosagentesdesaude" title="">Gestão dos Agentes de Saúde
-
-com TABLET</a></h3>
+                         <h3 class="fullWidth nmt mb10"><a href="gestaodosagentesdesaude" title="">Gestão dos Agentes de Saúde</a></h3>
                 <p class="descricao-modulo">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
 
                     <a href="gestaodosagentesdesaude" title="" class="btn">veja mais</a>

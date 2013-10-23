@@ -19,39 +19,39 @@
                         
                     <ul class="nostyle listfloat">
                         <li class="pos1">
-                            <strong>Parnaíba (PI)</strong>
+                            <strong>Parnaíba</strong>
                             <i class="pin"></i>
                         </li>
                         <li class="pos2">
-                            <strong>Floriano (PI)</strong>
+                            <strong>Floriano</strong>
                             <i class="pin"></i>
                         </li>
                         <li class="pos3">
-                            <strong>Picos (PI)</strong>
+                            <strong>Picos</strong>
                             <i class="pin"></i>
                         </li>
                         <li class="pos4">
-                            <strong>Simplício Mendes (PI)</strong>
+                            <strong>Simplício Mendes</strong>
                             <i class="pin"></i>
                         </li>
                         <li class="pos5">
-                            <strong>São João (PI)</strong>
+                            <strong>São João</strong>
                             <i class="pin"></i>
                         </li>
                         <li class="pos6">
-                            <strong>Campo Maior (PI)</strong>
+                            <strong>Campo Maior</strong>
                             <i class="pin"></i>
                         </li>
                          <li class="pos7">
-                            <strong>Piripiri (PI)</strong>
+                            <strong>Piripiri</strong>
                             <i class="pin"></i>
                         </li>
                         <li class="pos8">
-                            <strong>Sobral (CE)</strong>
+                            <strong>Sobral</strong>
                             <i class="pin"></i>
                         </li>
                         <li class="pos9">
-                            <strong>Teresina (PI)</strong>
+                            <strong>Teresina</strong>
                             <i class="pin"></i>
                         </li>
                     </ul>

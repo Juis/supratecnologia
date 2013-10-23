@@ -25,7 +25,7 @@
                           <div class="item__content">
                             <div class="item__content__inner">
                               <header>
-                                <h1 class="item__header text-seperator">Regulação de Marcação Consultas e Exames</h1>
+                                <h1 class="item__header text-seperator">Regulação e Marcação Consultas e Exames</h1>
 
                               </header>
 
@@ -142,8 +142,8 @@
                           <div class="loader"></div>-->
 
 
-                          <article class="item item1 item-main item--image"> <a href="solucoes">
-                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/f30a3457.img-gestor.jpg'); ?>">
+                          <article class="item item1 item-main itemgold item--image"> <a href="solucoes">
+                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/4c615779.img-gestor2.jpg'); ?>">
                             <div class="item__content nbg np">
                               <div class="item__content__inner">
                                 <header>
@@ -169,7 +169,7 @@
                             <div class="item__content">
                               <div class="item__content__inner">
                                 <header>
-                                  <h1 class="item__header text-seperator">Gestão do Tratamento fora de domicílio (TFD)</h1>
+                                  <h1 class="item__header text-seperator">Gestão do TFD</h1>
 
                                 </header>
 
@@ -223,9 +223,7 @@
                             <div class="item__content">
                               <div class="item__content__inner">
                                 <header>
-                                  <h1 class="item__header text-seperator">Gestão dos Agentes de Saúde
-
-com TABLET</h1>
+                                  <h1 class="item__header text-seperator">Gestão dos Agentes de Saúde</h1>
 
                                 </header>
 
