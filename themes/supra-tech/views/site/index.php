@@ -41,7 +41,7 @@
                           <div class="item__content">
                             <div class="item__content__inner">
                               <header>
-                                <h1 class="item__header text-seperator">Prontuário Médico Ambulatorial</h1>
+                                <h1 class="item__header text-seperator">Prontuário Médico e SAME</h1>
 
                               </header>
                             </div>
@@ -62,7 +62,7 @@
                           <div class="item__content">
                             <div class="item__content__inner">
                               <header>
-                                <h1 class="item__header text-seperator">Gestão de Autorização de Internação Hospitalar (AIH)</h1>
+                                <h1 class="item__header text-seperator">Gestão de AIH</h1>
 
                               </header>
                             </div>
