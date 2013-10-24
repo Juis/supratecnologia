@@ -19,86 +19,84 @@
 
                </div>
                <div class="form-contato">
-                    <form action="" method="">
+                    <?php $form=$this->beginWidget('CActiveForm', array(
+                        'id'=>'contato-form',
+                        'enableClientValidation'=>true,
+                        'clientOptions'=>array( 'validateOnSubmit'=>true )
+                    )); ?>
                         <ul class="nostyle listfloat">
                             <li>
-                                <label for="nome">Qual é o seu nome?</label>
-                                <input type="text" name="nome" id="nome" placeholder="..digite aqui o seu nome" required="true" autofocus="">
+                                <?php echo $form->labelEx($model,'nome').$form->error($model,'nome'); ?>
+				<?php echo $form->textField($model,'nome', array('id'=>'nome', 'placeholder'=>'..digite aqui o seu nome', 'required'=>'true', 'autofocus'=>'')); ?>
                             </li>
                             <li>
-                                <label for="mail">..e o seu e-mail?</label>
-                                <input type="mail" name="mail" id="mail" placeholder="..digite aqui o seu e-mail" required="true">
+                                <?php echo $form->labelEx($model,'email').$form->error($model,'email'); ?>
+				<?php echo $form->textField($model,'email', array('id'=>'mail', 'placeholder'=>'..digite aqui o seu e-mail', 'required'=>'true')); ?>
                             </li>
                             <li>
-                                <label for="mail">Qual o seu município/instituição?</label>
-                                <input type="mail" name="mail" id="mail" placeholder="..município e instituição" required="true">
+                                <?php echo $form->labelEx($model,'municipio').$form->error($model,'municipio'); ?>
+				<?php echo $form->textField($model,'municipio', array('id'=>'mail', 'placeholder'=>'..município e instituição', 'required'=>'true')); ?>
                             </li>
                              <li>
+                                
                                 <label for="modulo">Quais os módulos de seu interesse?</label>
 
                                 <div class="label-check">
 
-
-
                                     <div class="checkitem">
-                                        <input class="fl mr5" id="Checkbox1" name="approve[]" type="checkbox" value="1">
-                                        <label for="Checkbox1" class="checklabel fl">Regulação de Marcação Consultas e Exames</label>
+                                        <?php echo $form->checkBox($model,'regulacao_marcacao_consultas_exames', array('class'=>'fl mr5', 'id'=>'Checkbox1', 'value'=>'1')); ?>
+                                        <?php echo $form->labelEx($model,'regulacao_marcacao_consultas_exames', array('class'=>'checklabel fl')).$form->error($model,'regulacao_marcacao_consultas_exames'); ?>
                                     </div>
 
                                     <div class="checkitem">
-                                        <input class="fl mr5" id="Checkbox2" name="approve[]" type="checkbox" value="2">
-                                        <label for="Checkbox2" class="checklabel fl">Prontuário Médico Ambulatorial</label>
+                                        <?php echo $form->checkBox($model,'prontuario_medico_ambulatorial', array('class'=>'fl mr5', 'id'=>'Checkbox2', 'value'=>'2')); ?>
+                                        <?php echo $form->labelEx($model,'prontuario_medico_ambulatorial', array('class'=>'checklabel fl')).$form->error($model,'prontuario_medico_ambulatorial'); ?>
                                     </div>
 
                                     <div class="checkitem">
-                                        <input class="fl mr5" id="Checkbox3" name="approve[]" type="checkbox" value="3">
-                                        <label for="Checkbox3" class="checklabel fl">Gestão de Autorização de Internação Hospitalar (AIH)</label>
+                                        <?php echo $form->checkBox($model,'gestao_autorizacao_internacao_hospitalar', array('class'=>'fl mr5', 'id'=>'Checkbox3', 'value'=>'3')); ?>
+                                        <?php echo $form->labelEx($model,'gestao_autorizacao_internacao_hospitalar', array('class'=>'checklabel fl')).$form->error($model,'gestao_autorizacao_internacao_hospitalar'); ?>
                                     </div>
 
                                     <div class="checkitem">
-                                        <input class="fl mr5" id="Checkbox4" name="approve[]" type="checkbox" value="4">
-                                        <label for="Checkbox4" class="checklabel fl">Monitoramento dos índices do PMAQ</label>
-                                    </div>
-
-
-                                    <div class="checkitem">
-                                        <input class="fl mr5" id="Checkbox5" name="approve[]" type="checkbox" value="5">
-                                        <label for="Checkbox5" class="checklabel fl">Regulação de Leitos</label>
+                                        <?php echo $form->checkBox($model,'monitoramento_indices_pmaq', array('class'=>'fl mr5', 'id'=>'Checkbox4', 'value'=>'4')); ?>
+                                        <?php echo $form->labelEx($model,'monitoramento_indices_pmaq', array('class'=>'checklabel fl')).$form->error($model,'monitoramento_indices_pmaq'); ?>
                                     </div>
 
                                     <div class="checkitem">
-                                        <input class="fl mr5" id="Checkbox6" name="approve[]" type="checkbox" value="6">
-                                        <label for="Checkbox6" class="checklabel fl">Gestão do Tratamento fora de domicílio (TFD)</label>
+                                        <?php echo $form->checkBox($model,'regulacao_leitos', array('class'=>'fl mr5', 'id'=>'Checkbox5', 'value'=>'5')); ?>
+                                        <?php echo $form->labelEx($model,'regulacao_leitos', array('class'=>'checklabel fl')).$form->error($model,'regulacao_leitos'); ?>
                                     </div>
 
                                     <div class="checkitem">
-                                        <input class="fl mr5" id="Checkbox7" name="approve[]" type="checkbox" value="7">
-                                        <label for="Checkbox7" class="checklabel fl">Gestão da Farmácia</label>
+                                        <?php echo $form->checkBox($model,'gestao_tratamento_domicilio', array('class'=>'fl mr5', 'id'=>'Checkbox6', 'value'=>'6')); ?>
+                                        <?php echo $form->labelEx($model,'gestao_tratamento_domicilio', array('class'=>'checklabel fl')).$form->error($model,'gestao_tratamento_domicilio'); ?>
                                     </div>
 
                                     <div class="checkitem">
-                                        <input class="fl mr5" id="Checkbox8" name="approve[]" type="checkbox" value="8">
-                                        <label for="Checkbox8" class="checklabel fl">Gestão dos Agentes de Saúde
-
-com TABLET</label>
+                                        <?php echo $form->checkBox($model,'gestao_farmacia', array('class'=>'fl mr5', 'id'=>'Checkbox7', 'value'=>'7')); ?>
+                                        <?php echo $form->labelEx($model,'gestao_farmacia', array('class'=>'checklabel fl')).$form->error($model,'gestao_farmacia'); ?>
                                     </div>
 
                                     <div class="checkitem">
-                                        <input class="fl mr5" id="Checkbox9" name="approve[]" type="checkbox" value="9">
-                                        <label for="Checkbox9" class="checklabel fl">Georrefenciamento da
-
-Atenção Básica</label>
+                                        <?php echo $form->checkBox($model,'gestao_agentes_saude_tablet', array('class'=>'fl mr5', 'id'=>'Checkbox8', 'value'=>'8')); ?>
+                                        <?php echo $form->labelEx($model,'gestao_agentes_saude_tablet', array('class'=>'checklabel fl')).$form->error($model,'gestao_agentes_saude_tablet'); ?>
                                     </div>
 
                                     <div class="checkitem">
-                                        <input class="fl mr5" id="Checkbox10" name="approve[]" type="checkbox" value="10">
-                                        <label for="Checkbox10" class="checklabel fl">Web Mapas da Dengue</label>
+                                        <?php echo $form->checkBox($model,'georrefenciamento_atencao_basica', array('class'=>'fl mr5', 'id'=>'Checkbox9', 'value'=>'9')); ?>
+                                        <?php echo $form->labelEx($model,'georrefenciamento_atencao_basica', array('class'=>'checklabel fl')).$form->error($model,'georrefenciamento_atencao_basica'); ?>
                                     </div>
 
-                                    <div class="checkitem pt20">
-                                        <input class="fl mr5" id="toggle" name="toggle" type="checkbox" id="toggle" value="select" onclick="do_this()">
-                                        <label for="toggle" class="checklabel fl">Marcar todos os módulos</label>
+                                    <div class="checkitem">
+                                        <?php echo $form->checkBox($model,'web_mapa_dengue', array('class'=>'fl mr5', 'id'=>'Checkbox10', 'value'=>'10')); ?>
+                                        <?php echo $form->labelEx($model,'web_mapa_dengue', array('class'=>'checklabel fl')).$form->error($model,'web_mapa_dengue'); ?>
                                     </div>
+
+                                    <!--<div class="checkitem pt20">
+                                        <?php #echo $form->checkBox($model,'marcar_todos_modulos', array('class'=>'fl mr5', 'id'=>'toggle', 'value'=>'select', 'onclick'=>'do_this()')); ?>
+                                        <?php #echo $form->labelEx($model,'marcar_todos_modulos', array('class'=>'checklabel fl')).$form->error($model,'marcar_todos_modulos'); ?>
+                                    </div> -->
 
                                 </div>
 
@@ -108,10 +106,11 @@ Atenção Básica</label>
                                 <textarea cols="" rows="" id="msg" name="msg"></textarea>
                             </li>
                             <li>
-                                <button type="submit" class="fr">Enviar mensagem</button>
+                                <?php echo CHtml::submitButton('Enviar mensagem', array('class'=>'fr')); ?>
+                                
                             </li>
                         </ul>
-                    </form>
+                    <?php $this->endWidget(); ?>
                </div>
 
             </div>

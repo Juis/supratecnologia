@@ -17,7 +17,28 @@ class SiteController extends Controller
     
     public function actionFaleConosco()
     {
-        $this->render('faleconosco');
+        $model = new Contato;
+
+        if (isset($_POST['Contato'])):
+
+            $model->attributes = $_POST['Contato'];
+
+            if ($model->validate()):
+            
+				$message = new YiiMailMessage;
+				$message->setBody($model->comentario, 'text/html');
+				$message->subject = 'Email Supra Site';
+				$message->addTo($model->email);
+				$message->from = Yii::app()->params['adminEmail'];
+				Yii::app()->mail->send($message);
+				
+				Yii::app()->user->setFlash('sucess', "Mensagem enviada com sucesso!");
+				$this->redirect('index');
+			endif;
+
+        endif;
+
+        $this->render('faleconosco', array('model' => $model));
     }
     
     public function actionCasosDeSucesso()
