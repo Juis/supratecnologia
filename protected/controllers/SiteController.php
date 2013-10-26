@@ -12,7 +12,20 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        $this->render('index');
+        // paginacao
+        $criteria = new CDbCriteria();
+        $count = Noticia::model()->count($criteria);
+        $pages = new CPagination($count);
+
+        $pages->pageSize = 8;
+        $pages->applyLimit($criteria);
+        $models = Noticia::model()->findAll($criteria);
+        // fim paginacao
+        
+        $this->render('index', array(
+            'models' => $models,
+            'pages' => $pages)
+        );
     }
     
     public function actionFaleConosco()
@@ -24,17 +37,19 @@ class SiteController extends Controller
             $model->attributes = $_POST['Contato'];
 
             if ($model->validate()):
-            
-				$message = new YiiMailMessage;
-				$message->setBody($model->comentario, 'text/html');
-				$message->subject = 'Email Supra Site';
-				$message->addTo($model->email);
-				$message->from = Yii::app()->params['adminEmail'];
-				Yii::app()->mail->send($message);
-				
-				Yii::app()->user->setFlash('sucess', "Mensagem enviada com sucesso!");
-				$this->redirect('index');
-			endif;
+                
+                $message = new YiiMailMessage;
+                $message->setBody($model->comentario, 'text/html');
+                $message->subject = 'Email Supra Site';
+                $message->addTo($model->email);
+                $message->from = Yii::app()->params['adminEmail'];
+                
+                Yii::app()->mail->send($message);
+                Yii::app()->user->setFlash('sucess', "Mensagem enviada com sucesso!");
+                
+                $this->redirect('index');
+                
+            endif;
 
         endif;
 
@@ -93,7 +108,20 @@ class SiteController extends Controller
     
     public function actionNovidades()
     {
-        $this->render('novidades');
+        // paginacao
+        $criteria = new CDbCriteria();
+        $count = Noticia::model()->count($criteria);
+        $pages = new CPagination($count);
+
+        $pages->pageSize = 8;
+        $pages->applyLimit($criteria);
+        $models = Noticia::model()->findAll($criteria);
+        // fim paginacao
+        
+        $this->render('novidades', array(
+            'models' => $models,
+            'pages' => $pages)
+        );
     }  
     
     public function actionProntuarioMedicoAmbulatorial()
