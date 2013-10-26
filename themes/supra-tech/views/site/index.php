@@ -361,130 +361,27 @@ Atenção Básica</h1>
 
             <section class="timeline relative fullWidth">
 
-
+                
                 <div class="posts">
 
-                    <div class="post-model fr">
+                    <?php foreach($models as $key => $model): $class = ($key % 2 === 0)? 'post-model fl' : 'post-model fr'; ?>
+                    <div class="<?php echo $class; ?>">
 
                         <figure>
-                            <a href="javascript" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/904b7cd5.img6.jpg'); ?>" width="280" height="220" alt=""></a>
+                            <a href="javascript" title="<?php echo $models[$key]->titulo; ?>"><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/'.$models[$key]->img); ?>" width="280" height="220" alt="<?php echo $models[$key]->titulo; ?>"></a>
                         </figure>
-                        <a href="materia" title="">
-                            <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
+                        <a href="materia?id=<?php echo $models[$key]->id; ?> " title="<?php echo $models[$key]->titulo; ?>">
+                            <h3><?php echo $models[$key]->titulo; ?></h3>
                         </a>
-                       <!-- <small>
-                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
-                        </small>-->
 
                     </div>
+                    <?php endforeach; ?>
 
-                    <div class="post-model fl">
-
-                        <figure>
-                            <a href="javascript" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/a75c75a3.img1.jpg'); ?>" width="280" height="220" alt=""></a>
-                        </figure>
-                        <a href="materia" title="">
-                            <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
-                        </a>
-                       <!-- <small>
-                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
-                        </small>-->
-
-                    </div>
-                    <div class="post-model fr">
-
-                        <figure>
-                            <a href="javascript" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/e86c1490.img2.jpg'); ?>" width="280" height="220" alt=""></a>
-                        </figure>
-                        <a href="materia" title="">
-                            <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
-                        </a>
-                       <!-- <small>
-                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
-                        </small>-->
-
-                    </div>
-
-                    <div class="post-model fl">
-
-                        <figure>
-                            <a href="javascript" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/9ab43e88.img4.jpg'); ?>" width="280" height="220" alt=""></a>
-                        </figure>
-                        <a href="materia" title="">
-                            <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
-                        </a>
-                       <!-- <small>
-                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
-                        </small>-->
-
-                    </div>
-                    <div class="post-model fr">
-
-                        <a href="materia" title="">
-                            <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
-                        </a>
-                       <!-- <small>
-                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
-                        </small>-->
-
-                    </div>
-
-                    <div class="post-model fl">
-
-                        <figure>
-                            <a href="javascript" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/cb1757f0.img8.jpg'); ?>" width="280" height="220" alt=""></a>
-                        </figure>
-                        <a href="materia" title="">
-                            <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
-                        </a>
-                       <!-- <small>
-                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
-                        </small>-->
-
-                    </div>
-                    <div class="post-model fr">
-
-                        <figure>
-                           <iframe width="280" height="220" src="//www.youtube.com/embed/WFnupZKrLK8" frameborder="0" allowfullscreen=""></iframe>
-                        </figure>
-                        <a href="materia" title="">
-                            <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
-                        </a>
-                       <!-- <small>
-                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
-                        </small>-->
-
-                    </div>
-                    <div class="post-model fl">
-
-                        <a href="materia" title="">
-                            <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
-                        </a>
-                       <!-- <small>
-                            <a href="materia" title="" class="mr5">BBC World</a> | há 20 minutos atrás
-                        </small>-->
-
-                    </div>
-
-                    <div class="post-model fr">
-
-                        <figure>
-                            <a href="javascript" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/904b7cd5.img6.jpg'); ?>" width="280" height="220" alt=""></a>
-                        </figure>
-                        <a href="materia" title="">
-                            <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
-                        </a>
-                       <!-- <small>
-                            <a href="javascript:;" title="" class="mr5">BBC World</a> | há 20 minutos atrás
-                        </small>-->
-
-                    </div>
                 </div>
 
             </section>
-
+            <?php $this->widget('CLinkPager', array('pages'=>$pages)); ?>
          </div>
-
 
     </section><!-- fim do conteudo -->
 
