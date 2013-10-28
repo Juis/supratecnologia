@@ -1,4 +1,8 @@
-<?php /* @var $this Controller */ ?>
+<?php /* @var $this Controller */ 
+
+    $inner = (Yii::app()->controller->action->id == 'index')? '' : 'inner';
+?>
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -17,7 +21,7 @@
 
 <body>
     
-    <div class="doc relative">
+    <div class="doc relative <?php echo $inner; ?>">
         
         <?php include_once('includes/header.php'); ?>
 
