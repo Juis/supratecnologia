@@ -7,29 +7,40 @@
                 <h2 class="fl">NOVIDADES</h2>
 
                 <a href="index" title="" class="fr">voltar ao início <i class="icon-angle-double-right"></i></a>
+                
+                <?php $this->widget('application.components.KeywordSearchComponent'); ?>
 
-                <div class="busca-timeline mt20 mr20 fr">
-                    <form class="form-busca" action="busca" method="">
-                        <input type="search" name="" placeholder="encontre novidades...">
-                        <button type="submit">BUSCAR</button> 
-                        <i class="icon-search"></i>
-                    </form>
-                </div>
             </header>
         </div>
 
-
         <div id="materia" class="container-primario pt20 pb40">
-
+            
+        <?php if($materia_dados): 
+            
+            if(isset($_GET['searchbox']) && $_GET['searchbox']):
+                
+                $titulo = $materia_dados[0]->titulo;
+                $data_cadastro = $materia_dados[0]->data_cadastro;
+                $conteudo = $materia_dados[0]->conteudo;
+                
+            else:
+                
+                $titulo = $materia_dados->titulo;
+                $data_cadastro = $materia_dados->data_cadastro;
+                $conteudo = $materia_dados->conteudo;
+                
+            endif;
+            
+        ?>
+            
             <div class="topo-materia fullWidth mb20">
-                <small class="date mb20"><?php echo $materia_dados->data_cadastro; ?></small>
-                <h1><?php echo $materia_dados->titulo; ?></h1>
+                <small class="date mb20"><?php echo $data_cadastro; ?></small>
+                <h1><?php echo $titulo; ?></h1>
             </div>
-
 
             <div class="container-materia fullWidth">
                 
-                <?php echo $materia_dados->conteudo; ?>
+                <?php echo $conteudo; ?>
             
             </div>
 
@@ -66,7 +77,10 @@
                 </div>
 
             </div>
-
+            
+        <?php else: ?>
+            Nenhuma consulta encontrada!
+        <?php endif; ?>
         </div>
 
      </section>

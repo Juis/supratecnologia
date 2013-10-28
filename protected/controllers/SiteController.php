@@ -2,6 +2,9 @@
 
 class SiteController extends Controller
 {
+    private $keywordSearchColumnArray;
+    public $currentSearchValue;
+    
     /**
      * Declares class-based actions.
      */
@@ -12,7 +15,7 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        // paginacao
+        # paginacao
         $criteria = new CDbCriteria();
         $count = Noticia::model()->count($criteria);
         $pages = new CPagination($count);
@@ -20,7 +23,6 @@ class SiteController extends Controller
         $pages->pageSize = 8;
         $pages->applyLimit($criteria);
         $models = Noticia::model()->findAll($criteria);
-        // fim paginacao
         
         $this->render('index', array(
             'models' => $models,
@@ -93,8 +95,23 @@ class SiteController extends Controller
     
     public function actionMateria()
     {
+        # busca
+        $this->keywordSearchColumnArray = array('titulo');
+        $criteria = new CDbCriteria();
+
+        if (isset($_GET['searchbox']) and strlen(trim(urlEncode($_GET['searchbox']))) > 0):
+
+            $this->currentSearchValue = trim(urlEncode($_GET['searchbox']));
+            $additionalCriteria = $this->makeKeywordSearchCondition(urlEncode($_GET['searchbox']));
+            $criteria->addCondition($additionalCriteria);
+
+        endif;
+
+        if (isset($_GET['tag']))
+            $criteria->addSearchCondition('tags', urlEncode($_GET['tag']));
+        
         # dados da materia
-        $materia = Noticia::model()->findByPk((int) $_GET['id']);
+        $materia = (isset($_GET['searchbox']) && $_GET['searchbox'])? Noticia::model()->findAll($criteria) : Noticia::model()->findByPk((int) $_GET['id']);
         
         $this->render('materia', array(
             'materia_dados' => $materia)
@@ -168,5 +185,39 @@ class SiteController extends Controller
                     else
                             $this->render('404', $error);
             }
+    }
+    
+    /**
+     * Make the keyword search SQL.
+     * @param String  Search string input by user
+     * @return String  SQL condition
+     */
+    private function makeKeywordSearchCondition($keywordStr, $calendario=null)
+    {
+        $criteriaSql = ($calendario)? " eventoData = '".$calendario."'" : '';
+        
+        $elementArray = array();
+        $regX = "/[\s,]*\\\"([^\\\"]+)\\\"[\s,]*|[\s,]+/";
+        $tempArray = preg_split($regX, trim($keywordStr), 0, PREG_SPLIT_DELIM_CAPTURE);
+
+        foreach ($tempArray as $ind => $str)
+            if (trim($str)) array_push($elementArray, $str);
+
+        foreach ($this->keywordSearchColumnArray as $column):
+
+            foreach ($elementArray as $value):
+
+                if ($criteriaSql) 
+                    $criteriaSql .= ' OR';
+
+                $criteriaSql .= " $column LIKE '%".$keywordStr."%'";
+
+            endforeach;
+
+        endforeach;
+        
+        $criteriaSql .= ' LIMIT 1 ';
+        
+        return $criteriaSql;
     }
 }
