@@ -344,13 +344,7 @@ Atenção Básica</h1>
                             </ul>
                     </li></ul>
 
-                    <div class="busca-timeline">
-                        <form class="form-busca" action="busca" method="">
-                            <input type="search" name="" placeholder="encontre novidades...">
-                            <button type="submit">BUSCAR</button> 
-                            <i class="icon-search"></i>
-                        </form>
-                    </div>
+                    <?php $this->widget('application.components.KeywordSearchComponent'); ?>
 
                 </div>
 
@@ -363,8 +357,11 @@ Atenção Básica</h1>
 
                 
                 <div class="posts">
-
+                    
+                <?php if($models): ?>
+                    
                     <?php foreach($models as $key => $model): $class = ($key % 2 === 0)? 'post-model fl' : 'post-model fr'; ?>
+                    
                     <div class="<?php echo $class; ?>">
 
                         <figure>
@@ -375,8 +372,14 @@ Atenção Básica</h1>
                         </a>
 
                     </div>
+                    
                     <?php endforeach; ?>
-
+                    
+                <?php else: ?>
+                    <div class="post-model fl">
+                        Nenhuma consulta encontrada!
+                    </div>
+                <?php endif; ?>
                 </div>
 
             </section>
