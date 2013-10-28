@@ -7,14 +7,9 @@
                 <h2 class="fl">NOVIDADES</h2>
 
                 <a href="index" title="" class="fr">voltar ao início <i class="icon-angle-double-right"></i></a>
+                
+                <?php $this->widget('application.components.KeywordSearchComponent'); ?>
 
-                <div class="busca-timeline mt20 mr20 fr">
-                    <form class="form-busca" action="busca" method="">
-                        <input type="search" name="" placeholder="encontre novidades...">
-                        <button type="submit">BUSCAR</button> 
-                        <i class="icon-search"></i>
-                    </form>
-                </div>
             </header>
         </div>
 
@@ -24,7 +19,9 @@
 
 
                 <div class="posts">
-
+                    
+                <?php if($models): ?>
+                    
                     <?php foreach($models as $key => $model): $class = ($key % 2 === 0)? 'post-model fl' : 'post-model fr'; ?>
                     <div class="<?php echo $class; ?>">
 
@@ -37,7 +34,15 @@
 
                     </div>
                     <?php endforeach; ?>
-
+                    
+                <?php else: ?>
+                    
+                    <div class="post-model fl">
+                        Nenhuma consulta encontrada!
+                    </div>
+                    
+                <?php endif; ?>
+                    
                 </div>
 
             </section>

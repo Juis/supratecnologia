@@ -155,8 +155,33 @@ class SiteController extends Controller
     
     public function actionNovidades()
     {
-        // paginacao
-        $criteria = new CDbCriteria();
+        if(isset($_GET['searchbox']) && $_GET['searchbox']):
+
+            # busca
+            $this->keywordSearchColumnArray = array('titulo');
+            $criteria = new CDbCriteria();
+
+            if (isset($_GET['searchbox']) and strlen(trim(urlEncode($_GET['searchbox']))) > 0):
+
+                $this->currentSearchValue = trim(urlEncode($_GET['searchbox']));
+                $additionalCriteria = $this->makeKeywordSearchCondition(urlEncode($_GET['searchbox']));
+                $criteria->addCondition($additionalCriteria);
+
+            endif;
+
+            if (isset($_GET['tag'])):
+                
+                $criteria->addSearchCondition('tags', urlEncode($_GET['tag']));
+            
+            endif;
+            
+        else:
+            
+            $criteria = new CDbCriteria();
+        
+        endif;
+        
+        # paginação
         $count = Noticia::model()->count($criteria);
         $pages = new CPagination($count);
 
