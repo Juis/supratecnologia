@@ -93,7 +93,12 @@ class SiteController extends Controller
     
     public function actionMateria()
     {
-        $this->render('materia');
+        # dados da materia
+        $materia = Noticia::model()->findByPk((int) $_GET['id']);
+        
+        $this->render('materia', array(
+            'materia_dados' => $materia)
+        );
     }      
     
     public function actionModulo()
