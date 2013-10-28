@@ -376,9 +376,11 @@ Atenção Básica</h1>
                     <?php endforeach; ?>
                     
                 <?php else: ?>
+                    
                     <div class="post-model fl">
                         Nenhuma consulta encontrada!
                     </div>
+                    
                 <?php endif; ?>
                 </div>
 
