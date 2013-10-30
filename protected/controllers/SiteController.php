@@ -138,8 +138,15 @@ class SiteController extends Controller
         # dados da materia
         $materia = (isset($_GET['searchbox']) && $_GET['searchbox'])? Noticia::model()->findAll($criteria) : Noticia::model()->findByPk((int) $_GET['id']);
         
+        # dados outras materias
+        $materiaAnterior = Noticia::model()->findAll(array('condition'=>'id < :x', 'params'=>array(':x'=>(int) $_GET['id']), 'order' => 'id DESC', 'limit' => 1));
+        $materiaProxima = Noticia::model()->findAll(array('condition'=>'id > :x', 'params'=>array(':x'=>(int) $_GET['id']), 'order' => 'id ASC', 'limit' => 1));
+        
         $this->render('materia', array(
-            'materia_dados' => $materia)
+                'materia_dados' => $materia,
+                'materia_anterior' => $materiaAnterior,
+                'materia_proxima' => $materiaProxima
+            )
         );
     }      
     

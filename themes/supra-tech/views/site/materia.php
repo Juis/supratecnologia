@@ -51,29 +51,29 @@
                 </div>
 
                 <div class="grid-6 primeiro">
-
+                <?php if($materia_anterior): ?>
                     <figure class="fl mr15">
-                        <a href="materia" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/904b7cd5.img6.jpg'); ?>" width="120" height="110" alt=""></a>
+                        <a href="materia?id=<?php echo $materia_anterior[0]->id; ?>" title="<?php echo $materia_anterior[0]->titulo; ?>"><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/'.$materia_anterior[0]->img); ?>" width="120" height="110" alt="<?php echo $materia_anterior[0]->titulo; ?>"></a>
                     </figure>
 
                     <span class="fl">ANTERIOR</span>
-                    <a href="materia" title="">
-                        <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
+                    <a href="materia?id=<?php echo $materia_anterior[0]->id; ?>" title="<?php echo $materia_anterior[0]->titulo; ?>">
+                        <h3><?php echo $materia_anterior[0]->titulo; ?></h3>
                     </a>
-
+                <?php endif; ?>
                 </div>
 
                 <div class="grid-6 ultimo txt-right">
-
+                <?php if($materia_proxima): ?>
                     <figure class="fr ml15">
-                        <a href="materia" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/904b7cd5.img6.jpg'); ?>" width="120" height="110" alt=""></a>
+                        <a href="materia?id=<?php echo $materia_proxima[0]->id; ?>" title="<?php echo $materia_proxima[0]->titulo; ?>"><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/'.$materia_proxima[0]->img); ?>" width="120" height="110" alt="<?php echo $materia_proxima[0]->titulo; ?>"></a>
                     </figure>
 
                     <span class="fr">PRÓXIMO</span>
-                    <a href="materia" title="">
-                        <h3>Como sincronizar páginas de web com o Chrome no PC e no celular</h3>
+                    <a href="materia?id=<?php echo $materia_proxima[0]->id; ?>" title="<?php echo $materia_proxima[0]->titulo; ?>">
+                        <h3><?php echo $materia_proxima[0]->titulo; ?></h3>
                     </a>
-
+                <?php endif; ?>
                 </div>
 
             </div>
