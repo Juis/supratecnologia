@@ -45,7 +45,7 @@ class SiteController extends Controller
         $count = Noticia::model()->count($criteria);
         $pages = new CPagination($count);
 
-        $pages->pageSize = 8;
+        $pages->pageSize = 1;
         $pages->applyLimit($criteria);
         $models = Noticia::model()->findAll($criteria);
         
