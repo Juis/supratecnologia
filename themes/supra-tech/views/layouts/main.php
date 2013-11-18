@@ -55,6 +55,6 @@
     </script>
     
     <script src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/js/68a9dc2f.main.js'); ?>"></script>
-    <script src = "<?php echo CHtml::asset(Yii::getPathOfAlias('ext.yiinfinite-scroll.assets').'/jquery.infinitescroll.min.js'); ?>"></script>
+    
 </body>
 </html>

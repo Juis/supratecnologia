@@ -14,87 +14,93 @@
 class YiinfiniteScroller extends CBasePager {
 
     public $contentSelector = '#content';
+    public $navigationLinkText = 'next';
 
     private $_options = array(
         'loadingImg'    => null,
         'loadingText'   => null,
         'donetext'      => null,
         'itemSelector'  => null,
-        'errorCallback' => null
+        'errorCallback' => null,
     );
 
     private $_default_options = array(
-        'navSelector'   => 'div#infinite_navigation',
-        'nextSelector'  => 'div#infinite_navigation a:first',
+        'navSelector'   => 'div.infinite_navigation',
+        'nextSelector'  => 'div.infinite_navigation a:first',
         'bufferPx'      => '300',
     );
 
-    public function init() {
+    public function init() 
+    {
         $this->getPages()->validateCurrentPage = false;
         parent::init();
     }
 
-    public function run() {
-        #$this->registerClientScript();
-        $this->createInfiniteScrollScript();
-        $this->renderNavigation();
-
-        if($this->getPages()->getPageCount() > 0 && $this->theresNoMorePages()) {
+    public function run() 
+    {
+        if($this->pageCount > 1):
+            
+            $this->registerClientScript();
+            $this->createInfiniteScrollScript();
+            $this->renderNavigation();
+            
+        endif;
+        
+        if($this->currentPageDoesntExists()) 
             throw new CHttpException(404);
-        }
     }
 
-    public function __get($name) {
-        if(array_key_exists($name, $this->_options)) {
+    public function __get($name) 
+    {
+        if(array_key_exists($name, $this->_options)) 
             return $this->_options[$name];
-        }
-
+        
         return parent::__get($name);
     }
 
-    public function __set($name, $value) {
-        if(array_key_exists($name, $this->_options)) {
+    public function __set($name, $value) 
+    {
+        if(array_key_exists($name, $this->_options)) 
             return $this->_options[$name] = $value;
-        }
 
         return parent::__set($name, $value);
     }
 
-    public function registerClientScript() {
+    public function registerClientScript() 
+    {
         $url = CHtml::asset(Yii::getPathOfAlias('ext.yiinfinite-scroll.assets').'/jquery.infinitescroll.min.js');
-        Yii::app()->clientScript->registerScriptFile($url);
+        Yii::app()->clientScript->registerScriptFile($url,CClientScript::POS_END);
     }
 
-    private function createInfiniteScrollScript() {
-        
+    private function createInfiniteScrollScript() 
+    {
         Yii::app()->clientScript->registerScript(
             uniqid(),
-           "$('{$this->contentSelector}').infinitescroll(".$this->buildInifiniteScrollOptions().");"
+            "$('{$this->contentSelector}').infinitescroll(".$this->buildInifiniteScrollOptions().");"
         );
     }
 
-    private function buildInifiniteScrollOptions() {
+    private function buildInifiniteScrollOptions() 
+    {
         $options = array_merge($this->_options, $this->_default_options);
         $options = array_filter( $options );
         $options = CJavaScript::encode($options);
-
         return $options;
     }
 
-    private function renderNavigation() {
-        $next_link = CHtml::link('CARREGAR MAIS NOVIDADES',$this->createPageUrl($this->getCurrentPage(true)+1), array("class"=>"btn-timeline"));
-        echo '<ul class="nostyle">
-            <li class="hide">1</li>
-            <li class="next-post" id="infinite_navigation">
-                  '.$next_link.'
-            </li>
-          </ul>';
+    private function renderNavigation() 
+    {
+        $next_link = CHtml::link($this->navigationLinkText, $this->createPageUrl($this->currentPage+1));
+        echo '<div class="infinite_navigation">'.$next_link.'</div>';
     }
 
-    private function theresNoMorePages() {
-        return $this->getPages()->getCurrentPage() >= $this->getPages()->getPageCount();
+    private function currentPageDoesntExists() 
+    {
+        if($this->pageCount > 1) 
+            return $this->currentPage > $this->pageCount-1;
+        else
+            return $this->currentPage > 0;
     }
-
 }
 
 ?>

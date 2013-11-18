@@ -370,8 +370,19 @@ Atenção Básica</h1>
                         <a href="materia?id=<?php echo $models[$key]->id; ?> " title="<?php echo $models[$key]->titulo; ?>">
                             <h3><?php echo $models[$key]->titulo; ?></h3>
                         </a>
-                        <?php $this->widget('CLinkPager', array('pages'=>$pages)); ?>
-                        
+
+                        <footer class="fullWidth">
+
+                            <div class="navigation container-primario"  id="infinite_navigation">
+                                <?php $this->widget("ext.yiinfinite-scroll.YiinfiniteScroller", array(
+                                    "contentSelector" => "#posts_timeline",
+                                    "itemSelector" => "div.post-model",
+                                    "loadingText" => "CARREGANDO...",
+                                    "donetext" => "fim da lista, obrigado por ler nossas mat�rias!",
+                                    "pages" => $pages)); ?>
+                            </div>
+
+                        </footer>
                         
                     </div>
                     
@@ -392,20 +403,5 @@ Atenção Básica</h1>
          </div>
 
     </section><!-- fim do conteudo -->
-
-    <footer class="fullWidth">
-             
-        <div class="navigation container-primario">
-            <?php $this->widget('ext.yiinfinite-scroll.YiinfiniteScroller', array(
-                    'contentSelector' => '#posts_timeline',
-                    'itemSelector' => '.post-model',
-                    'loadingImg' => '<img src="http://www.infinite-scroll.com/loading.gif" alt="Loading...">',
-                    'loadingText' => 'CARREGANDO...',
-                    'donetext' => 'fim da lista, obrigado por ler nossas mat�rias!',
-                    'pages' => $pages,
-            )); ?>
-        </div>
-
-    </footer>
 
 </div><!-- fim do content -->
