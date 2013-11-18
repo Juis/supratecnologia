@@ -361,7 +361,6 @@ Atenção Básica</h1>
                 <?php if($models): ?>
                     
                     <?php foreach($models as $key => $value): $class = ($key % 2 === 0)? 'post-model fl' : 'post-model fr'; ?>
-                    
                     <div class="<?php echo $class; ?>">
 
                         <figure>
@@ -371,21 +370,16 @@ Atenção Básica</h1>
                             <h3><?php echo $models[$key]->titulo; ?></h3>
                         </a>
 
-                        <footer class="fullWidth">
-
-                            <div class="navigation container-primario"  id="infinite_navigation">
-                                <?php $this->widget("ext.yiinfinite-scroll.YiinfiniteScroller", array(
-                                    "contentSelector" => "#posts_timeline",
-                                    "itemSelector" => "div.post-model",
-                                    "loadingText" => "CARREGANDO...",
-                                    "donetext" => "fim da lista, obrigado por ler nossas mat�rias!",
-                                    "pages" => $pages)); ?>
-                            </div>
-
-                        </footer>
+                        <div id="infinite_navigation">
+                            <?php $this->widget("ext.yiinfinite-scroll.YiinfiniteScroller", array(
+                                "contentSelector" => "#posts_timeline",
+                                "itemSelector" => "div.post-model",
+                                "loadingText" => "CARREGANDO...",
+                                "donetext" => "fim da lista, obrigado por ler nossas mat�rias!",
+                                "pages" => $pages)); ?>
+                        </div>
                         
                     </div>
-                    
                     <?php endforeach; ?>
                     
                 <?php else: ?>
@@ -403,5 +397,15 @@ Atenção Básica</h1>
          </div>
 
     </section><!-- fim do conteudo -->
+    
+    <!--<footer class="fullWidth">
 
+            <div class="container-primario">
+                <a href="materia" title="" class="btn-timeline">
+                    CARREGAR MAIS NOVIDADES
+                </a>
+            </div>
+
+    </footer>-->
+    
 </div><!-- fim do content -->

@@ -18,7 +18,7 @@
             <section class="timeline relative fullWidth">
 
 
-                <div class="posts">
+                <div class="posts" id="posts_timeline">
                     
                 <?php if($models): ?>
                     
@@ -31,7 +31,16 @@
                         <a href="materia?id=<?php echo $models[$key]->id; ?> " title="<?php echo $models[$key]->titulo; ?>">
                             <h3><?php echo $models[$key]->titulo; ?></h3>
                         </a>
-
+                        
+                        <div id="infinite_navigation">
+                            <?php $this->widget("ext.yiinfinite-scroll.YiinfiniteScroller", array(
+                                "contentSelector" => "#posts_timeline",
+                                "itemSelector" => "div.post-model",
+                                "loadingText" => "CARREGANDO...",
+                                "donetext" => "fim da lista, obrigado por ler nossas matérias!",
+                                "pages" => $pages)); ?>
+                        </div>
+                            
                     </div>
                     <?php endforeach; ?>
                     
@@ -46,13 +55,13 @@
                 </div>
 
             </section>
-            <?php $this->widget('CLinkPager', array('pages'=>$pages)); ?>
+            
          </div>
 
 
     </section><!-- fim do conteudo -->
 
-    <footer class="fullWidth">
+    <!--<footer class="fullWidth">
 
         <div class="container-primario">
             <a href="materia" title="" class="btn-timeline">
@@ -60,6 +69,6 @@
             </a>
         </div>
 
-    </footer>
+    </footer>-->
 
 </div>
