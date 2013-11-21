@@ -17,7 +17,7 @@
             
         <?php if($materia_dados): 
             
-            if(isset($_GET['searchbox']) && $_GET['searchbox']):
+            if(isset($_POST['searchbox']) && $_POST['searchbox']):
                 
                 $titulo = $materia_dados[0]->titulo;
                 $data_cadastro = $materia_dados[0]->data_cadastro;
@@ -25,7 +25,7 @@
                 
             else:
                 
-                $titulo = $materia_dados->titulo;
+                $titulo = $materia_dados['titulo'];
                 $data_cadastro = $materia_dados->data_cadastro;
                 $conteudo = $materia_dados->conteudo;
                 

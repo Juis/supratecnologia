@@ -1,3 +1,4 @@
+<?php if(Yii::app()->controller->action->id != 'novidades'): ?>
 <header id="doc-topo">
 
     <div class="conteudo-topo">
@@ -54,3 +55,4 @@
     </div>
 
 </header>
+<?php endif; ?>

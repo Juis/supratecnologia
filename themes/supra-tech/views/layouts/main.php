@@ -1,6 +1,7 @@
 <?php /* @var $this Controller */ 
 
-    $inner = (Yii::app()->controller->action->id == 'index')? '' : 'inner';
+$inner = (Yii::app()->controller->action->id == 'index')? '' : 'inner';
+    
 ?>
 
 <!doctype html>

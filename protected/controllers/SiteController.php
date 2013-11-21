@@ -124,10 +124,10 @@ class SiteController extends Controller
         $this->keywordSearchColumnArray = array('titulo');
         $criteria = new CDbCriteria();
 
-        if (isset($_GET['searchbox']) and strlen(trim(urlEncode($_GET['searchbox']))) > 0):
+        if (isset($_POST['searchbox']) and strlen(trim(urlEncode($_POST['searchbox']))) > 0):
 
-            $this->currentSearchValue = trim(urlEncode($_GET['searchbox']));
-            $additionalCriteria = $this->makeKeywordSearchCondition(urlEncode($_GET['searchbox']));
+            $this->currentSearchValue = trim(urlEncode($_POST['searchbox']));
+            $additionalCriteria = $this->makeKeywordSearchCondition(urlEncode($_POST['searchbox']));
             $criteria->addCondition($additionalCriteria);
 
         endif;
@@ -136,7 +136,7 @@ class SiteController extends Controller
             $criteria->addSearchCondition('tags', urlEncode($_GET['tag']));
         
         # dados da materia
-        $materia = (isset($_GET['searchbox']) && $_GET['searchbox'])? Noticia::model()->findAll($criteria) : Noticia::model()->findByPk((int) $_GET['id']);
+        $materia = (isset($_POST['searchbox']) && $_POST['searchbox'])? Noticia::model()->findAll($criteria) : Noticia::model()->findByPk((int) $_GET['id']);
         
         # dados outras materias
         $materiaAnterior = Noticia::model()->findAll(array('condition'=>'id < :x', 'params'=>array(':x'=>(int) $_GET['id']), 'order' => 'id DESC', 'limit' => 1));
@@ -162,24 +162,19 @@ class SiteController extends Controller
     
     public function actionNovidades()
     {
-        if(isset($_GET['searchbox']) && $_GET['searchbox']):
-
+        
+        if(isset($_POST['searchbox']) && $_POST['searchbox']):
+            
             # busca
             $this->keywordSearchColumnArray = array('titulo');
             $criteria = new CDbCriteria();
 
-            if (isset($_GET['searchbox']) and strlen(trim(urlEncode($_GET['searchbox']))) > 0):
+            if (strlen(trim(urlEncode($_POST['searchbox']))) > 0):
 
-                $this->currentSearchValue = trim(urlEncode($_GET['searchbox']));
-                $additionalCriteria = $this->makeKeywordSearchCondition(urlEncode($_GET['searchbox']));
+                $this->currentSearchValue = trim(urlEncode($_POST['searchbox']));
+                $additionalCriteria = $this->makeKeywordSearchCondition(urlEncode($_POST['searchbox']));
                 $criteria->addCondition($additionalCriteria);
 
-            endif;
-
-            if (isset($_GET['tag'])):
-                
-                $criteria->addSearchCondition('tags', urlEncode($_GET['tag']));
-            
             endif;
             
         else:
