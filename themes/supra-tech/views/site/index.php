@@ -374,8 +374,8 @@ Atenção Básica</h1>
                             <?php $this->widget("ext.yiinfinite-scroll.YiinfiniteScroller", array(
                                 "contentSelector" => "#posts_timeline",
                                 "itemSelector" => "div.post-model",
-                                "loadingText" => "CARREGANDO...",
-                                "donetext" => "fim da lista, obrigado por ler nossas mat�rias!",
+                                "loadingText" => "",
+                                "donetext" => "",
                                 "pages" => $pages)); ?>
                         </div>
                         
