@@ -8,6 +8,7 @@ class Contato extends CFormModel
 {
     public $nome;
     public $email;
+    public $modulos;
     public $municipio;
     public $regulacao_marcacao_consultas_exames;
     public $prontuario_medico_ambulatorial;
