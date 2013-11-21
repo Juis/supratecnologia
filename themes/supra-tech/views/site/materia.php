@@ -25,7 +25,7 @@
                 
             else:
                 
-                $titulo = $materia_dados['titulo'];
+                $titulo = $materia_dados->titulo;
                 $data_cadastro = $materia_dados->data_cadastro;
                 $conteudo = $materia_dados->conteudo;
                 
