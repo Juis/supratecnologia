@@ -1,6 +1,7 @@
 <?php /* @var $this Controller */ 
 
-    $inner = (Yii::app()->controller->action->id == 'index')? '' : 'inner';
+$inner = (Yii::app()->controller->action->id == 'index')? '' : 'inner';
+    
 ?>
 
 <!doctype html>
@@ -48,5 +49,6 @@
     
     <script src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/js/scroll-sticky.js'); ?>"></script>
     <script src = "<?php echo CHtml::asset(Yii::getPathOfAlias('ext.yiinfinite-scroll.assets').'/jquery.infinitescroll.min.js'); ?>"></script>
+
 </body>
 </html>
