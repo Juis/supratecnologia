@@ -14,7 +14,7 @@
 
             <div class="grid-4 nml">
                 <figure>
-                    <img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/ff93a622.img-gestfarmacia.jpg'); ?>" width="300" height="245" alt="">
+                    <img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-gestfarmacia.jpg'); ?>" width="300" height="245" alt="">
                 </figure>
 
 
@@ -31,12 +31,16 @@
 
             <div class="grid-8">
                 <h3 class="fullWidth nmt mb20">Gestão de Farmácia</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-
+                <p>A gestão farmacêutica de seu Município possuirá o poder de monitorar todas as movimentações de medicamentos ocorridas nos estabelecimentos em tempo real, objetivando organização e redução de custos;</p>
+<p>Possui alerta para as entregas desnecessárias aos pacientes que já tenham recebido o medicamento, e que ainda estejam dentro do período previsto para o consumo;</p>
+<p>Possui um rigoroso controle de validade, a fim de evitar perdas;</p>
+<p>Os pedidos para reposição de estoque são realizados online pelos estabelecimentos;</p>
+<p>Possui área específica para o SAMU, onde controla a reposição de produtos de cada ambulância;</p>
+<p>Permite a transferência de medicamentos entre os estabelecimentos;</p>
+<p>Possui cadastro de pacientes dos programas do Ministério da Saúde, bem como seus quantitativos e custos com medicamentos;</p>
+<p>Possui histórico dos medicamentos prescritos por cada médico;</p>
+<p>Emite alerta da necessidade de compra para os produtos que atingirem o estoque mínimo programado;</p>
+<p>Evita a divergência entre as notas fiscais emitidas e os valores licitados.</p>
 
             </div>
 

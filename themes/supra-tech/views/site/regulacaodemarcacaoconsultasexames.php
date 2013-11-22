@@ -13,7 +13,7 @@
 
             <div class="grid-4 nml">
                 <figure>
-                    <img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/536e8ae9.img-agendar.jpg'); ?>" width="300" height="245" alt="">
+                    <img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-agendar.jpg'); ?>" width="300" height="245" alt="">
                 </figure>
 
 
@@ -30,12 +30,18 @@
 
             <div class="grid-8">
                 <h3 class="fullWidth nmt mb20">Regulação e Marcação Consultas e Exames</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-
+                <p>Solução de grande abrangência social, que permite a regulação e o agendamento de consultas e exames do SUS diretamente dos Estabelecimentos de Saúde e Municípios Pactuados;
+                </p><p>Efetua a regulação da oferta de serviços dos estabelecimentos e profissionais de acordo com o CNES;</p>
+                <p>Alerta quando do limite financeiro atingido para os estabelecimentos de acordo com a FPO, e municípios referenciados de acordo com a pactuação da PPI; 
+                </p><p>Alerta para a incompatibilidade do procedimento com o sexo e idade do paciente;</p>
+                <p>Possui protocolos clínicos para o encaminhamento de pacientes quanto à frequência do procedimento para o mesmo paciente, quanto à necessidade de uma consulta anterior para o encaminhamento de um determinado exame, ou a verificação da especialidade do profissional solicitante para o encaminhamento do procedimento;</p>
+                <p>Para o médico regulador, são disponibilizadas informações para monitoramento e autorização online dos procedimentos regulados;</p>
+                <p>Gerencia a fila de espera, identificando os pacientes e quantitativos por especialidade;</p>
+                <p>Os hospitais e clinicas podem listar, em tempo real, seus pacientes agendados;</p>
+                <p>Identifica os pacientes através de leitura Biométrica ou cartão SUS, inclusive no dia do atendimento agendado, objetivando registrar os médicos ou pacientes faltosos, como também, os atendimentos realizados para fins de faturamento.</p>
+                <p>A fim de garantir maior segurança, as informações são disponibilizadas de acordo com o nível configurado para cada usuário;</p>
+                <p>Disponibiliza Mapas Georreferenciados para a visualização dos procedimentos realizados;</p>
+               <p> Oferece diversos relatórios estatísticos e gerenciais na Web para Gestão do SUS.</p>
 
             </div>
 

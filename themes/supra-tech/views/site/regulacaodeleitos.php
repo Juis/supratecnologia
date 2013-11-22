@@ -13,7 +13,7 @@
 
             <div class="grid-4 nml">
                 <figure>
-                    <img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/31407d00.img-regleitos.jpg'); ?>" width="300" height="245" alt="">
+                    <img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-regleitos.jpg'); ?>" width="300" height="245" alt="">
                 </figure>
 
 
@@ -30,13 +30,19 @@
 
             <div class="grid-8">
                 <h3 class="fullWidth nmt mb20">Regulação de Leitos</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-
-
+                <p>Efetua a regulação online da ocupação dos leitos disponíveis ao SUS, através da classificação de risco, do controle das entradas, permanências e saídas dos pacientes internados;</p>
+<p>Facilita a visualização em tempo real dos leitos vagos e ocupados por estabelecimento;</p>
+<p>Facilita a localização dos estabelecimentos com leitos vagos compatíveis com a complexidade da internação do paciente;</p>
+<p>Registra o histórico das mudanças de leitos e de procedimentos ocorridas em cada internação;</p>
+<p>Registra as transferências de pacientes entre municípios, hospitais e leitos;</p>
+<p>Possui histórico das internações por pacientes;</p>
+<p>Permite cadastrar os leitos regulados, que serão ocupados mediante análise da classificação de risco do paciente e autorização do médico regulador;</p>
+<p>Registra as autorizações das internações eletivas e de urgências, efetuadas pelo médico regulador;</p>
+<p>Possui histórico das autorizações por médico regulador;</p>
+<p>Permite a programação de reserva de leitos para paciente;</p>
+<p>Permite a ocupação dos leitos de UTI de acordo com a classificação de risco e autorização do médico regulador;</p>
+<p>Possui lista de espera da UTI e de internações eletivas;</p>
+<p>Pode funcionar integrado ao módulo de Gestão de AIH.</p>
             </div>
 
         </div>

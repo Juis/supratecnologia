@@ -58,15 +58,46 @@ class SiteController extends Controller
     public function actionFaleConosco()
     {
         $model = new Contato;
-
+        $modulos = '';
+        
         if (isset($_POST['Contato'])):
 
             $model->attributes = $_POST['Contato'];
 
             if ($model->validate()):
+                var_dump($_POST['Contato']['modulos']);
+                if($_POST['Contato']['modulos']):
+                    
+                    $modulos = "modulos: \n";
+                    $arrayModulos = array(
+                        1=>'Regulação de Marcação Consultas e Exames',
+                        2=>'Prontuário Médico Ambulatorial',
+                        3=>'Gestão de Autorização de Internação Hospitalar (AIH)',
+                        4=>'Monitoramento dos índices do PMAQ',
+                        5=>'Regulação de Leitos',
+                        6=>'Gestão do Tratamento fora de domicílio (TFD)',
+                        7=>'Gestão da Farmácia',
+                        8=>'Gestão dos Agentes de Saúde com TABLET',
+                        9=>'Georrefenciamento da Atenção Básica',
+                        10=>'Web Mapas da Dengue'
+                    );
+                
+                    foreach($_POST['Contato']['modulos'] as $key=>$value):
+                                   
+                        if(array_key_exists($_POST['Contato']['modulos'][$key], $arrayModulos)):
+                        
+                            $modulos .= '> '.$arrayModulos[$_POST['Contato']['modulos'][$key]]."; \n";
+                        
+                        endif;
+
+                    endforeach;
+                    
+                    $modulos .= substr($modulos, 0, -1);
+                    
+                endif;
                 
                 $message = new YiiMailMessage;
-                $message->setBody($model->comentario, 'text/html');
+                $message->setBody($modulos."\n \n".$model->comentario, 'text/html');
                 $message->subject = 'Email Supra Site';
                 $message->addTo($model->email);
                 $message->from = Yii::app()->params['adminEmail'];
@@ -124,10 +155,10 @@ class SiteController extends Controller
         $this->keywordSearchColumnArray = array('titulo');
         $criteria = new CDbCriteria();
 
-        if (isset($_GET['searchbox']) and strlen(trim(urlEncode($_GET['searchbox']))) > 0):
+        if (isset($_POST['searchbox']) and strlen(trim(urlEncode($_POST['searchbox']))) > 0):
 
-            $this->currentSearchValue = trim(urlEncode($_GET['searchbox']));
-            $additionalCriteria = $this->makeKeywordSearchCondition(urlEncode($_GET['searchbox']));
+            $this->currentSearchValue = trim(urlEncode($_POST['searchbox']));
+            $additionalCriteria = $this->makeKeywordSearchCondition(urlEncode($_POST['searchbox']));
             $criteria->addCondition($additionalCriteria);
 
         endif;
@@ -136,7 +167,7 @@ class SiteController extends Controller
             $criteria->addSearchCondition('tags', urlEncode($_GET['tag']));
         
         # dados da materia
-        $materia = (isset($_GET['searchbox']) && $_GET['searchbox'])? Noticia::model()->findAll($criteria) : Noticia::model()->findByPk((int) $_GET['id']);
+        $materia = (isset($_POST['searchbox']) && $_POST['searchbox'])? Noticia::model()->findAll($criteria) : Noticia::model()->findByPk((int) $_GET['id']);
         
         # dados outras materias
         $materiaAnterior = Noticia::model()->findAll(array('condition'=>'id < :x', 'params'=>array(':x'=>(int) $_GET['id']), 'order' => 'id DESC', 'limit' => 1));
@@ -162,24 +193,19 @@ class SiteController extends Controller
     
     public function actionNovidades()
     {
-        if(isset($_GET['searchbox']) && $_GET['searchbox']):
-
+        
+        if(isset($_POST['searchbox']) && $_POST['searchbox']):
+            
             # busca
             $this->keywordSearchColumnArray = array('titulo');
             $criteria = new CDbCriteria();
 
-            if (isset($_GET['searchbox']) and strlen(trim(urlEncode($_GET['searchbox']))) > 0):
+            if (strlen(trim(urlEncode($_POST['searchbox']))) > 0):
 
-                $this->currentSearchValue = trim(urlEncode($_GET['searchbox']));
-                $additionalCriteria = $this->makeKeywordSearchCondition(urlEncode($_GET['searchbox']));
+                $this->currentSearchValue = trim(urlEncode($_POST['searchbox']));
+                $additionalCriteria = $this->makeKeywordSearchCondition(urlEncode($_POST['searchbox']));
                 $criteria->addCondition($additionalCriteria);
 
-            endif;
-
-            if (isset($_GET['tag'])):
-                
-                $criteria->addSearchCondition('tags', urlEncode($_GET['tag']));
-            
             endif;
             
         else:

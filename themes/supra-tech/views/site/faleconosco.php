@@ -43,61 +43,25 @@
 
                                 <div class="label-check">
 
-                                    <div class="checkitem">
-                                        <?php echo $form->checkBox($model,'regulacao_marcacao_consultas_exames', array('class'=>'fl mr5', 'id'=>'Checkbox1', 'value'=>'1')); ?>
-                                        <?php echo $form->labelEx($model,'regulacao_marcacao_consultas_exames', array('class'=>'checklabel fl')).$form->error($model,'regulacao_marcacao_consultas_exames'); ?>
-                                    </div>
-
-                                    <div class="checkitem">
-                                        <?php echo $form->checkBox($model,'prontuario_medico_ambulatorial', array('class'=>'fl mr5', 'id'=>'Checkbox2', 'value'=>'2')); ?>
-                                        <?php echo $form->labelEx($model,'prontuario_medico_ambulatorial', array('class'=>'checklabel fl')).$form->error($model,'prontuario_medico_ambulatorial'); ?>
-                                    </div>
-
-                                    <div class="checkitem">
-                                        <?php echo $form->checkBox($model,'gestao_autorizacao_internacao_hospitalar', array('class'=>'fl mr5', 'id'=>'Checkbox3', 'value'=>'3')); ?>
-                                        <?php echo $form->labelEx($model,'gestao_autorizacao_internacao_hospitalar', array('class'=>'checklabel fl')).$form->error($model,'gestao_autorizacao_internacao_hospitalar'); ?>
-                                    </div>
-
-                                    <div class="checkitem">
-                                        <?php echo $form->checkBox($model,'monitoramento_indices_pmaq', array('class'=>'fl mr5', 'id'=>'Checkbox4', 'value'=>'4')); ?>
-                                        <?php echo $form->labelEx($model,'monitoramento_indices_pmaq', array('class'=>'checklabel fl')).$form->error($model,'monitoramento_indices_pmaq'); ?>
-                                    </div>
-
-                                    <div class="checkitem">
-                                        <?php echo $form->checkBox($model,'regulacao_leitos', array('class'=>'fl mr5', 'id'=>'Checkbox5', 'value'=>'5')); ?>
-                                        <?php echo $form->labelEx($model,'regulacao_leitos', array('class'=>'checklabel fl')).$form->error($model,'regulacao_leitos'); ?>
-                                    </div>
-
-                                    <div class="checkitem">
-                                        <?php echo $form->checkBox($model,'gestao_tratamento_domicilio', array('class'=>'fl mr5', 'id'=>'Checkbox6', 'value'=>'6')); ?>
-                                        <?php echo $form->labelEx($model,'gestao_tratamento_domicilio', array('class'=>'checklabel fl')).$form->error($model,'gestao_tratamento_domicilio'); ?>
-                                    </div>
-
-                                    <div class="checkitem">
-                                        <?php echo $form->checkBox($model,'gestao_farmacia', array('class'=>'fl mr5', 'id'=>'Checkbox7', 'value'=>'7')); ?>
-                                        <?php echo $form->labelEx($model,'gestao_farmacia', array('class'=>'checklabel fl')).$form->error($model,'gestao_farmacia'); ?>
-                                    </div>
-
-                                    <div class="checkitem">
-                                        <?php echo $form->checkBox($model,'gestao_agentes_saude_tablet', array('class'=>'fl mr5', 'id'=>'Checkbox8', 'value'=>'8')); ?>
-                                        <?php echo $form->labelEx($model,'gestao_agentes_saude_tablet', array('class'=>'checklabel fl')).$form->error($model,'gestao_agentes_saude_tablet'); ?>
-                                    </div>
-
-                                    <div class="checkitem">
-                                        <?php echo $form->checkBox($model,'georrefenciamento_atencao_basica', array('class'=>'fl mr5', 'id'=>'Checkbox9', 'value'=>'9')); ?>
-                                        <?php echo $form->labelEx($model,'georrefenciamento_atencao_basica', array('class'=>'checklabel fl')).$form->error($model,'georrefenciamento_atencao_basica'); ?>
-                                    </div>
-
-                                    <div class="checkitem">
-                                        <?php echo $form->checkBox($model,'web_mapa_dengue', array('class'=>'fl mr5', 'id'=>'Checkbox10', 'value'=>'10')); ?>
-                                        <?php echo $form->labelEx($model,'web_mapa_dengue', array('class'=>'checklabel fl')).$form->error($model,'web_mapa_dengue'); ?>
-                                    </div>
-
-                                    <!--<div class="checkitem pt20">
-                                        <?php #echo $form->checkBox($model,'marcar_todos_modulos', array('class'=>'fl mr5', 'id'=>'toggle', 'value'=>'select', 'onclick'=>'do_this()')); ?>
-                                        <?php #echo $form->labelEx($model,'marcar_todos_modulos', array('class'=>'checklabel fl')).$form->error($model,'marcar_todos_modulos'); ?>
-                                    </div> -->
-
+                                    <?php echo $form->checkboxList($model, 'modulos', 
+                                        array(
+                                            'Regulação de Marcação Consultas e Exames',
+                                            'Prontuário Médico Ambulatorial',
+                                            'Gestão de Autorização de Internação Hospitalar (AIH)',
+                                            'Monitoramento dos índices do PMAQ',
+                                            'Regulação de Leitos',
+                                            'Gestão do Tratamento fora de domicílio (TFD)',
+                                            'Gestão da Farmácia',
+                                            'Gestão dos Agentes de Saúde com TABLET',
+                                            'Georrefenciamento da Atenção Básica',
+                                            'Web Mapas da Dengue' ), 
+                                        array(
+                                            'template' => '<div class="checkitem"> <spam class="fl mr5">{input}</spam><spam class="checklabel fl">{label}</spam></div>', 
+                                            'separator' => '',
+                                            'checkAll' => 'Marcar todos os módulos'
+                                        )
+                                    ); ?>
+                                    
                                 </div>
 
                             </li>

@@ -1,3 +1,5 @@
+<script async="true" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/js/api.js'); ?>"></script>
+
 <div id="doc-conteudo">
 
     <div id="bloco-apresentacao" class="bgParallax" data-speed="10">
@@ -21,7 +23,7 @@
                       <!-- Item 2 -->
 
                       <article class="item item2 item--image"> <a href="regulacaodemarcacaoconsultasexames">
-                        <div class="wrap"> <img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/536e8ae9.img-agendar.jpg'); ?>" >
+                        <div class="wrap"> <img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-agendar.jpg'); ?>" >
                           <div class="item__content">
                             <div class="item__content__inner">
                               <header>
@@ -37,7 +39,7 @@
                       <!-- Item 3 -->
 
                       <article class="item item3 item--image"> <a href="prontuariomedicoambulatorial">
-                        <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/661684c5.img-prontuario.jpg'); ?>">
+                        <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-prontuario.jpg'); ?>">
                           <div class="item__content">
                             <div class="item__content__inner">
                               <header>
@@ -58,7 +60,7 @@
                       <!-- Item 1 -->
 
                       <article class="item item1 item--image"> <a href="gestaodeautorizacaodeinternacaohospitalar">
-                        <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/6791378b.img-aih.jpg'); ?>"> 
+                        <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-aih.jpg'); ?>"> 
                           <div class="item__content">
                             <div class="item__content__inner">
                               <header>
@@ -73,7 +75,7 @@
                       <!-- Item 2 -->
 
                       <article class="item item2 item--image"> <a href="monitoramentodosindicesdopmaq">
-                        <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/3874aa23.img-indicemonitoramento.jpg'); ?>">
+                        <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-indicemonitoramento.jpg'); ?>">
                           <div class="item__content">
                             <div class="item__content__inner">
                               <header>
@@ -110,7 +112,7 @@
                         <article class="item item4 item--image"> <a href="regulacaodeleitos">
                           <div class="wrap">
 
-                            <img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/31407d00.img-regleitos.jpg'); ?>">
+                            <img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-regleitos.jpg'); ?>">
 
                             <div class="item__content">
                               <div class="item__content__inner">
@@ -142,8 +144,8 @@
                           <div class="loader"></div>-->
 
 
-                          <article class="item item1 item-main itemgold item--image"> <a href="solucoes">
-                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/4c615779.img-gestor2.jpg'); ?>">
+                          <article class="item item1 item-main item--image"> <a href="solucoes">
+                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-gestor.jpg'); ?>">
                             <div class="item__content nbg np">
                               <div class="item__content__inner">
                                 <header>
@@ -165,7 +167,7 @@
 
                         <!-- Item 1 -->
                         <article class="item item1 item--image"> <a href="gestaodotratamentoforadedomiciliotfd">
-                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/1ea80479.img-tfd.jpg'); ?>">
+                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-tfd.jpg'); ?>">
                             <div class="item__content">
                               <div class="item__content__inner">
                                 <header>
@@ -203,7 +205,7 @@
                         <!-- Item 2 -->
 
                         <article class="item item2 item--image"> <a href="gestaodefarmacia">
-                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/ff93a622.img-gestfarmacia.jpg'); ?>">
+                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-gestfarmacia.jpg'); ?>">
                             <div class="item__content">
                               <div class="item__content__inner">
                                 <header>
@@ -219,7 +221,7 @@
                         <!-- Item 3 -->
 
                         <article class="item item3 item--image"> <a href="gestaodosagentesdesaude">
-                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/4a70a636.img-agentes.jpg'); ?>">
+                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-agentes.jpg'); ?>">
                             <div class="item__content">
                               <div class="item__content__inner">
                                 <header>
@@ -241,7 +243,7 @@
                         <!-- Item 1 -->
 
                         <article class="item item1 item--image"> <a href="georreferenciamentodaatencaobasica">
-                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/41bdef68.img-georref.jpg'); ?>">
+                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-georref.jpg'); ?>">
                             <div class="item__content">
                               <div class="item__content__inner">
                                 <header>
@@ -259,7 +261,7 @@ Atenção Básica</h1>
                         <!-- Item 2 -->
 
                         <article class="item item2 item--image"> <a href="webmapasdadengue">
-                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/e36e180a.img-webdengue.jpg'); ?>"> 
+                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-webdengue.jpg'); ?>"> 
                             <div class="item__content">
                               <div class="item__content__inner">
                                 <header>
@@ -289,11 +291,11 @@ Atenção Básica</h1>
 
     </div><!-- fim da apresentação -->
 
-    <div id="down_button"><a href="#bloco-conteudo"><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/5608c12f.down.png'); ?>" class="pulse"></a></div>
+    <div id="down_button"><a href="#bloco-conteudo"><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/down.png'); ?>" class="pulse"></a></div>
 
     <section id="bloco-conteudo" class="bgParallax" data-speed="5">
 
-        <div id="up_button" class="sticky-up"><a href="#doc-topo"><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/6b765605.up.png'); ?>" class="pulse"></a></div>
+        <div id="up_button" class="sticky-up"><a href="#doc-topo"><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/up.png'); ?>" class="pulse"></a></div>
 
         <header class="fullWidth sticky">
             <div class="container-primario">
@@ -353,26 +355,33 @@ Atenção Básica</h1>
 
          <div class="bloco">
 
-            <section class="timeline relative fullWidth">
+            <section id="novidades-posts" class="timeline relative fullWidth">
 
                 
-                <div class="posts">
+                <div class="posts" id="posts_timeline">
                     
                 <?php if($models): ?>
                     
-                    <?php foreach($models as $key => $model): $class = ($key % 2 === 0)? 'post-model fl' : 'post-model fr'; ?>
-                    
+                    <?php foreach($models as $key => $value): $class = ($key % 2 === 0)? 'post-model fl' : 'post-model fr'; ?>
                     <div class="<?php echo $class; ?>">
 
                         <figure>
-                            <a href="javascript" title="<?php echo $models[$key]->titulo; ?>"><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/'.$models[$key]->img); ?>" width="280" height="220" alt="<?php echo $models[$key]->titulo; ?>"></a>
+                            <a href="materia?id=<?php echo $models[$key]->id; ?> " title="<?php echo $models[$key]->titulo; ?>"><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/'.$models[$key]->img); ?>" width="280" height="220" alt="<?php echo $models[$key]->titulo; ?>"></a>
                         </figure>
                         <a href="materia?id=<?php echo $models[$key]->id; ?> " title="<?php echo $models[$key]->titulo; ?>">
                             <h3><?php echo $models[$key]->titulo; ?></h3>
                         </a>
 
+                        <div id="infinite_navigation">
+                            <?php $this->widget("ext.yiinfinite-scroll.YiinfiniteScroller", array(
+                                "contentSelector" => "#posts_timeline",
+                                "itemSelector" => "div.post-model",
+                                "loadingText" => "",
+                                "donetext" => "",
+                                "pages" => $pages)); ?>
+                        </div>
+                        
                     </div>
-                    
                     <?php endforeach; ?>
                     
                 <?php else: ?>
@@ -386,24 +395,19 @@ Atenção Básica</h1>
                 </div>
 
             </section>
-            <?php $this->widget('CLinkPager', array('pages'=>$pages)); ?>
+            
          </div>
 
     </section><!-- fim do conteudo -->
+    
+    <!--<footer class="fullWidth">
 
-    <footer class="fullWidth">
+            <div class="container-primario">
+                <a href="materia" title="" class="btn-timeline">
+                    CARREGAR MAIS NOVIDADES
+                </a>
+            </div>
 
-        <div class="navigation container-primario">
-          <ul class="nostyle">
-            <li class="hide">1</li>
-            <li class="next-post">
-              <a href="javascript:;" title="" class="btn-timeline">
-                  CARREGAR MAIS NOVIDADES
-              </a>
-            </li>
-          </ul>
-        </div>
-
-    </footer>
-
+    </footer>-->
+    
 </div><!-- fim do content -->

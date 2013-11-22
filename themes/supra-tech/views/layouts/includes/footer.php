@@ -1,3 +1,4 @@
+<?php if(Yii::app()->controller->action->id != 'novidades'): ?>
 <footer id="doc-rodape" class="fullWidth">
 
     <div class="parceiros fullWidth">
@@ -63,3 +64,4 @@
     </div>
     
 </footer>
+<?php endif; ?>

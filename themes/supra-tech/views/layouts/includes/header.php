@@ -1,3 +1,4 @@
+<?php if(Yii::app()->controller->action->id != 'novidades'): ?>
 <header id="doc-topo">
 
     <div class="conteudo-topo">
@@ -36,8 +37,15 @@
                             CASOS DE SUCESSO
                         </a>
                     </li>
+                    <!--
+                        <li>
+                            <a id="btn-go-novidades" href="#bloco-conteudo" title="Novidades">
+                                NOVIDADES
+                            </a>
+                        </li>
+                    -->
                     <li>
-                        <a href="novidades" title="Novidades">
+                        <a id="btn-go-novidades" href="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/../../index#bloco-conteudo'); ?>" title="Novidades">
                             NOVIDADES
                         </a>
                     </li>
@@ -49,8 +57,13 @@
                 </ul>
             </nav>
 
+
+
+            
+
         </div>
 
     </div>
 
 </header>
+<?php endif; ?>
