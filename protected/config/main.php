@@ -43,7 +43,7 @@ return array(
             /*'db'=>array(
                 'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
             ),*/
-            'db'=>array( 'connectionString' => 'mysql:host=localhost;dbname=supra_tech','emulatePrepare' => true, 'username' => 'root', 'password' => 'root', 'charset' => 'utf8', ),#lan
+            'db'=>array( 'connectionString' => 'mysql:host=localhost;dbname=supra_tech','emulatePrepare' => true, 'username' => 'root', 'password' => '', 'charset' => 'utf8', ),#lan
             'errorHandler'=>array(
                 'errorAction'=>'site/error'
             ),

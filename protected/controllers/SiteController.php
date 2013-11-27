@@ -15,16 +15,16 @@ class SiteController extends Controller
 
     public function actionIndex()
     {   
-        if(isset($_GET['searchbox']) && $_GET['searchbox']):
+        if(isset($_POST['searchbox']) && $_POST['searchbox']):
 
             # busca
             $this->keywordSearchColumnArray = array('titulo');
             $criteria = new CDbCriteria();
 
-            if (isset($_GET['searchbox']) and strlen(trim(urlEncode($_GET['searchbox']))) > 0):
+            if (isset($_POST['searchbox']) and strlen(trim(urlEncode($_POST['searchbox']))) > 0):
 
-                $this->currentSearchValue = trim(urlEncode($_GET['searchbox']));
-                $additionalCriteria = $this->makeKeywordSearchCondition(urlEncode($_GET['searchbox']));
+                $this->currentSearchValue = trim(urlEncode($_POST['searchbox']));
+                $additionalCriteria = $this->makeKeywordSearchCondition(urlEncode($_POST['searchbox']));
                 $criteria->addCondition($additionalCriteria);
 
             endif;
@@ -45,7 +45,7 @@ class SiteController extends Controller
         $count = Noticia::model()->count($criteria);
         $pages = new CPagination($count);
 
-        $pages->pageSize = 8;
+        $pages->pageSize = 1;
         $pages->applyLimit($criteria);
         $models = Noticia::model()->findAll($criteria);
         
@@ -218,7 +218,7 @@ class SiteController extends Controller
         $count = Noticia::model()->count($criteria);
         $pages = new CPagination($count);
 
-        $pages->pageSize = 8;
+        $pages->pageSize = 1;
         $pages->applyLimit($criteria);
         $models = Noticia::model()->findAll($criteria);
         // fim paginacao
