@@ -730,8 +730,8 @@ LAYOUT > MAIN
 
 .bgDoudado { background: url(../img/bgCasos2.jpg) no-repeat center center !important; }
 
-#casos-de-sucesso { background: url(../img/bgCasos.jpg) no-repeat center center; height: 380px; position: relative; }
-#casos-de-sucesso .container-primario { box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.2) inset; -moz-box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.2) inset; -webkit-box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.2) inset; height: 380px; }
+#casos-de-sucesso { background: url(../img/bgCasos.jpg) no-repeat center center; height: 380px; margin-bottom:40px;position: relative; }
+#casos-de-sucesso .container-primario { height: 380px; }
 #casos-de-sucesso ul { position: absolute; bottom: 19px; width: 940px; }
 #casos-de-sucesso li { width: 235px; text-align: center; margin-bottom: 20px; position: absolute; bottom: 0; }
 #casos-de-sucesso li strong { color: #000; margin: 0 auto; font-size: 15px; }
@@ -820,7 +820,7 @@ address .email_amarelo { width: 180px; height: 162px; background: url(../img/ema
 .novidades-page .lista-busca li a:hover, .busca-page .lista-busca li a:hover { background: #f9f9f9; }
 .novidades-page .lista-busca li a p, .busca-page .lista-busca li a p { font-size: 14px; line-height: 16px; color: #666; }
 
-.inner .bloco { padding: 105px 0 50px 0 !important; text-align: left !important; }
+.inner .bloco { padding: 105px 0 20px 0 !important; text-align: left !important; }
 .inner .bloco header a { color: #005EAC; font-size: 14px; line-height: 80px; text-decoration: none; }
 .inner .bloco h2 { font-size: 24px; text-transform: uppercase; font-weight: 400; margin: 22px 0 0 0; }
 .inner #bloco-apresentacao { height: 185px !important; }

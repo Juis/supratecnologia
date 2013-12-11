@@ -171,7 +171,7 @@
                             <div class="item__content">
                               <div class="item__content__inner">
                                 <header>
-                                  <h1 class="item__header text-seperator">Gestão do TFD</h1>
+                                  <h1 class="item__header text-seperator">Gestão do Tratamento fora de domicílio</h1>
 
                                 </header>
 
@@ -225,7 +225,7 @@
                             <div class="item__content">
                               <div class="item__content__inner">
                                 <header>
-                                  <h1 class="item__header text-seperator">Gestão dos Agentes de Saúde</h1>
+                                  <h1 class="item__header text-seperator">Gestão dos Agentes de Saúde com Tablet</h1>
 
                                 </header>
 

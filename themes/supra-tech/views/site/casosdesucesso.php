@@ -2,7 +2,7 @@
 
      <section id="bloco-conteudo" class="bgParallax no-box-shadow" data-speed="5">
 
-        <div class="bloco npb">
+        <div class="bloco pb20">
             <header class="fullWidth nbg">
                 <h2 class="fl">Casos de Sucesso</h2>
                 <a href="index" title="" class="fr">voltar ao início <i class="icon-angle-double-right"></i></a>

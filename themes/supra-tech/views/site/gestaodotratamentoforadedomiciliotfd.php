@@ -30,7 +30,7 @@
             </div>
 
             <div class="grid-8">
-                <h3 class="fullWidth nmt mb20">Gestão do TFD</h3>
+                <h3 class="fullWidth nmt mb20">Gestão do Tratamento fora de domicílio (TFD)</h3>
                 <p>Possibilitará que seu município acompanhe todos os gastos com os pacientes encaminhados para tratamento em outros municípios, envolvendo transporte, alimentação, hospedagem, consultas, exames e cirurgias;</p>
 <p>Identifica o local, data, médico responsável e valores contratados, caso não sejam pelo SUS;</p>
 <p>Registra a data e hora da comunicação ao paciente ou responsável, informando do procedimento agendado em outro município;</p>
