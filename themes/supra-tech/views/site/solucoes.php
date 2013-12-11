@@ -23,7 +23,17 @@
                 </div>
                 <div class="descricao grid-8">
                     <p>
-                       Registra as internações realizadas em seu município, gera e emite o número da AIH e controla o teto financeiro dos hospitais, evitando internações incompatíveis com o MS;</p>
+                      Solução para Gestão do SUS, desenvolvido para funcionamento na web e
+
+composta por módulos integrados que permitem a troca de informações on-line 
+
+entre eles. O Gestor Saúde se consolida como uma ferramenta essencial para 
+
+a regulação, controle, avaliação e auditoria das ofertas de serviços, demanda 
+
+populacional e recursos financeiros, propiciando a melhoria da gestão e da 
+
+promoção da saúde de seu município.</p>
                 </div>
            </div>
 
