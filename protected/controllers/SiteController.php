@@ -49,9 +49,18 @@ class SiteController extends Controller
         $pages->applyLimit($criteria);
         $models = Noticia::model()->findAll($criteria);
         
+        $dataProvider = new CActiveDataProvider('Noticia', array(
+                                'criteria' => $criteria,
+                                'pagination'=>array(
+                                    'pageSize'=>1,
+                                ),
+                            )
+                        );
+        
         $this->render('index', array(
             'models' => $models,
-            'pages' => $pages)
+            'pages' => $pages,
+            'dataProvider' => $dataProvider)
         );
     }
     
@@ -223,9 +232,18 @@ class SiteController extends Controller
         $models = Noticia::model()->findAll($criteria);
         // fim paginacao
         
+        $dataProvider = new CActiveDataProvider('Noticia', array(
+                                'criteria' => $criteria,
+                                'pagination'=>array(
+                                    'pageSize'=>1,
+                                ),
+                            )
+                        );
+        
         $this->render('novidades', array(
             'models' => $models,
-            'pages' => $pages)
+            'pages' => $pages,
+            'dataProvider' => $dataProvider)
         );
     }  
     
