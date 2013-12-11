@@ -372,17 +372,11 @@ Atenção Básica</h1>
                                      'rowSelector'=>'.post-model', 
                                      'listViewId' => 'PostList', 
                                      'header' => '',
-                                     'loaderText'=>'Loading...',
+                                     'loaderText'=>'Carregando...',
                                      'options' => array(
                                          'history' => false, 
                                          'triggerPageTreshold' => 1, 
-                                         'trigger'=>'<footer class="fullWidth">
-                                                        <div class="container-primario">
-                                                            <a href="materia" title="" class="btn-timeline">
-                                                                CARREGAR MAIS NOVIDADES
-                                                            </a>
-                                                        </div>
-                                                    </footer>'
+                                         'trigger'=>'CARREGAR MAIS NOVIDADES'
                                     ),
                                 )
                              )
