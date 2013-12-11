@@ -27,7 +27,7 @@
                           <div class="item__content">
                             <div class="item__content__inner">
                               <header>
-                                <h1 class="item__header text-seperator">Regulação e Marcação Consultas e Exames</h1>
+                                <h1 class="item__header text-seperator">Regulação e Marcação de Consultas e Exames</h1>
 
                               </header>
 

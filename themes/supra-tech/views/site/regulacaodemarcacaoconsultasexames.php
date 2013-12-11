@@ -29,7 +29,7 @@
             </div>
 
             <div class="grid-8">
-                <h3 class="fullWidth nmt mb20">Regulação e Marcação Consultas e Exames</h3>
+                <h3 class="fullWidth nmt mb20">Regulação e Marcação de Consultas e Exames</h3>
                 <p>Solução de grande abrangência social, que permite a regulação e o agendamento de consultas e exames do SUS diretamente dos Estabelecimentos de Saúde e Municípios Pactuados;
                 </p><p>Efetua a regulação da oferta de serviços dos estabelecimentos e profissionais de acordo com o CNES;</p>
                 <p>Alerta quando do limite financeiro atingido para os estabelecimentos de acordo com a FPO, e municípios referenciados de acordo com a pactuação da PPI; 

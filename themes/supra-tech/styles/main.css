@@ -619,6 +619,8 @@ BASE > BLOCOS
 
 .container-secundario { width: 300px; }
 
+.container-primario p {text-align:justify;}
+
 /* ------------------------------------------------------------------------------------------------------- 
 
 BASE > GRID SYSTEM 
@@ -1102,7 +1104,7 @@ pulse
 
 .group:after { content: ""; display: table; clear: both; }
 
-.item__content { padding-top: 10.5px; text-align: center; width: 60%; margin: 0 auto; position: absolute; bottom: 0; background: rgba(238, 27, 36, 0.8); width: 100%; height: 50%; z-index: 3; }
+.item__content { padding-top: 4.5px; text-align: center; width: 60%; margin: 0 auto; position: absolute; bottom: 0; background: rgba(238, 27, 36, 0.8); width: 100%; height: 50%; z-index: 3; }
 
 .item a { text-decoration: none !important; }
 
@@ -1145,7 +1147,7 @@ pulse
 
 .item--post:hover .item__header, .item--post:hover .item__copy { color: #fff; }
 
-.group .item__header { font-size: 14px; text-shadow: 0 0 1px black; text-rendering: optimizeLegibility; }
+.group .item__header { font-size: 13px; text-shadow:  0 0 0; text-rendering: optimizeLegibility; }
 
 .group .item--image .item__copy { display: none; }
 
