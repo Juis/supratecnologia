@@ -13,7 +13,7 @@
                                      'loaderText'=>'Loading...',
                                      'options' => array(
                                          'history' => false, 
-                                         'triggerPageTreshold' => 1, 
+                                         'triggerPageTreshold' => 8, 
                                          'trigger'=>'<footer class="fullWidth">
                                                         <div class="container-primario">
                                                             <a href="materia" title="" class="btn-timeline">

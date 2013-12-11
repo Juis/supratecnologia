@@ -375,7 +375,7 @@ Atenção Básica</h1>
                                      'loaderText'=>'Carregando...',
                                      'options' => array(
                                          'history' => false, 
-                                         'triggerPageTreshold' => 1, 
+                                         'triggerPageTreshold' => 8, 
                                          'trigger'=>'CARREGAR MAIS NOVIDADES'
                                     ),
                                 )

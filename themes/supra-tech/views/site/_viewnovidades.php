@@ -1,7 +1,7 @@
                 <?php if($data): ?>
                     
                     <?php #foreach($models as $key => $model): $class = ($key % 2 === 0)? 'post-model fl' : 'post-model fr'; ?>
-                    <div class="<?php echo 'post-model fl';#$class; ?>">
+                    <div class="<?php echo ($data->id % 2)?'post-model fl' : 'post-model fr';#$class; ?>">
 
                         <figure>
                             <a href="javascript" title="<?php echo $data->titulo; ?>"><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/'.$data->img); ?>" width="280" height="220" alt="<?php echo $data->titulo; ?>"></a>

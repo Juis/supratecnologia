@@ -202,7 +202,6 @@ class SiteController extends Controller
     
     public function actionNovidades()
     {
-        
         if(isset($_POST['searchbox']) && $_POST['searchbox']):
             
             # busca
