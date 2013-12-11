@@ -239,12 +239,10 @@ class SiteController extends Controller
                             )
                         );
         
-        $this->renderPartial('novidades', array(
+        $this->render('novidades', array(
             'models' => $models,
             'pages' => $pages,
-            'dataProvider' => $dataProvider),
-            false, 
-            true
+            'dataProvider' => $dataProvider)
         );
     }  
     
