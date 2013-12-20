@@ -2,7 +2,7 @@
 
      <section id="bloco-conteudo" class="bgParallax" data-speed="5">
 
-        <div class="bloco">
+        <div class="bloco mb20">
             <header class="fullWidth nbg">
                 <h2 class="fl">Soluções</h2>
                 <a href="index" title="" class="fr">voltar ao início <i class="icon-angle-double-right"></i></a>
@@ -79,7 +79,7 @@ promoção da saúde de seu município.</p>
 
                     <div class="grid-4">
                          <h3 class="fullWidth nmt mb10"><a href="gestaodeautorizacaodeinternacaohospitalar" title="">Gestão de AIH</a></h3>
-                <p class="descricao-modulo">Registra as internações realizadas em seu município, emite automaticamente o número da AIH e controla o teto financeiro dos hospitais, evitando internações desnecessárias ou incompatíveis com a legislação do Ministério da Saúde/SUS;</p>
+                <p class="descricao-modulo">Registra as internações realizadas em seu município, gera e emite o número da AIH e controla o teto financeiro dos hospitais, evitando internações incompatíveis com o MS;</p>
 
                     <a href="gestaodeautorizacaodeinternacaohospitalar" title="" class="btn">mais</a>
 
@@ -159,7 +159,7 @@ promoção da saúde de seu município.</p>
 
                     <div class="grid-4">
                          <h3 class="fullWidth nmt mb10"><a href="gestaodosagentesdesaude" title="">Gestão dos Agentes de Saúde com Tablet</a></h3>
-                <p class="descricao-modulo">Registra a coordenada geográfica de cada domicílio visitado, além de fotos que identifiquem problemas com a moradia ou saneamento;</p>
+                <p class="descricao-modulo">Moderniza o trabalho dos Agentes Comunitários, substituindo os papéis da FICHA-A pelo TABLET. Visualiza o horário e percurso realizado pelos Agentes em Web Mapas;</p>
 
                     <a href="gestaodosagentesdesaude" title="" class="btn">mais</a>
 

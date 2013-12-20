@@ -32,7 +32,7 @@
 
             <div class="grid-8">
                 <h3 class="fullWidth nmt mb20">Gestão de AIH</h3>
-                <p>Registra as internações realizadas em seu município, emite automaticamente o número da AIH e controla o teto financeiro dos hospitais, evitando internações desnecessárias ou incompatíveis com a legislação do Ministério da Saúde/SUS;</p>
+                <p>Registra as internações realizadas em seu município, gera e emite o número da AIH e controla o teto financeiro dos hospitais, evitando internações incompatíveis com o MS;</p>
 <p>Segue as regras de compatibilidade do SIGTAP, alertando quando ocorrer a incompatibilidade do procedimento e CID, na solicitação de AIH;</p>
 <p>Possui cadastro de faixa de AIH, que permite a identificação de números específicos para o Programa Nacional de Cirurgias Eletivas;</p>
 <p>Identifica os estabelecimentos habilitados para o atendimento aos procedimentos do Programa Nacional de Cirurgias Eletivas, bem como seus quantitativos programados;</p>

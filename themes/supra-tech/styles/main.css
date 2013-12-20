@@ -745,6 +745,8 @@ LAYOUT > MAIN
 #casos-de-sucesso .pos7 { bottom: 192px; left: 12px; }
 #casos-de-sucesso .pos8 { bottom: 214px; left: 720px; }
 #casos-de-sucesso .pos9 { bottom: 101px; left: 76px; }
+#casos-de-sucesso .pos10 { bottom: 256px; left: 576px; }
+#casos-de-sucesso .pos11 { bottom: 279px;   left: 376px; }
 
 #solucoes li { padding-bottom: 40px; margin-bottom: 40px; height: 172px; border-bottom: 1px solid #e5e5e5; }
 #solucoes li p { color: #666; }
@@ -760,10 +762,10 @@ LAYOUT > MAIN
 
 #materia .topo-materia .date { color: #666; }
 #materia .topo-materia h1 { font-size: 42px; line-height: 48px; font-weight: 100; margin: 10px 0 15px 0; }
-#materia .container-materia p { color: #666; margin: 0 0 20px 0; font-size: 16px; line-height: 22px; font-weight: 100; text-shadow: 0 0 1px #fff; }
+#materia .container-materia p , #materia .container-materia { color: #666;text-align:justify; margin: 0 0 20px 0; font-size: 16px; line-height: 22px; font-weight: 100; text-shadow: 0 0 1px #fff; }
 
 .outras-materias h2 { font-size: 26px; font-weight: 100; padding-bottom: 10px; margin-bottom: 20px; border-bottom: 1px dotted #e5e5e5; width: 100%; }
-.outras-materias span { font-size: 12px; font-weight: 100; color: #666; }
+.outras-materias span { font-size: 12px; width:310px;font-weight: 100; color: #666; }
 .outras-materias a { color: #005EAC; text-decoration: none; -webkit-transition: .2s linear all; -moz-transition: .2s linear all; -ms-transition: .2s linear all; -o-transition: .2s linear all; transition: .2s linear all; }
 .outras-materias a:hover { text-decoration: underline !important; }
 .outras-materias h3 { color: #005EAC; text-decoration: none; }

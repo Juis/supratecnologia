@@ -13,7 +13,7 @@
 
             <div class="grid-4 nml">
                 <figure class="fl">
-                    <img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img5.jpg'); ?>" width="300" height="245" alt="">
+                    <img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/imgqmsomos.jpg'); ?>" width="300" height="245" alt="">
                 </figure>
             </div>
 

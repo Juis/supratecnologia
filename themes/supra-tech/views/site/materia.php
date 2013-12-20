@@ -8,7 +8,7 @@
 
                 <a href="index" title="" class="fr">voltar ao início <i class="icon-angle-double-right"></i></a>
                 
-                <?php $this->widget('application.components.KeywordSearchComponent'); ?>
+                <span class="mt15 fr"><?php $this->widget('application.components.KeywordSearchComponent'); ?></span>
 
             </header>
         </div>
@@ -43,8 +43,8 @@
                 <?php echo $conteudo; ?>
             
             </div>
-
-            <div class="outras-materias">
+            <span class="division-line mb10 mt40"></span>
+            <div class="outras-materias fullWidth mt20">
 
                 <div class="fullWidth">
                     <h2 class="fl">Outras novidades</h2>

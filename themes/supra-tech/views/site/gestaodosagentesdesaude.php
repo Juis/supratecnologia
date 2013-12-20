@@ -31,7 +31,8 @@
 
             <div class="grid-8">
                 <h3 class="fullWidth nmt mb20">Gestão dos Agentes de Saúde</h3>
-                <p>Moderniza o trabalho dos Agentes Comunitários, substituindo os papéis utilizados na FICHA A pelo TABLET. Visualiza o percurso dos Agentes em modernos Web Mapas, que contemplam o horário, o domicílio visitado, além de fotos;</p>
+                <p>Moderniza o trabalho dos Agentes Comunitários, substituindo os papéis da FICHA-A pelo TABLET. Visualiza o horário e percurso realizado pelos Agentes em Web Mapas;</p>
+                <p>Registra a coordenada geográfica de cada domicílio visitado, além de fotos que identifiquem problemas com a moradia ou saneamento;</p>
 <p>Permite elaborar Web Mapas em tempo real a partir de filtros por faixa de data ou por Agente de Saúde selecionado;</p>
 <p>Identifica as áreas de atuação de cada Agente de Saúde;</p>
 <p>Indica a quantidade de domicílios visitados por cada Agente de Saúde e seus respectivos horários;</p>

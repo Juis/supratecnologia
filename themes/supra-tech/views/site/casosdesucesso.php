@@ -54,6 +54,14 @@
                             <strong>Teresina</strong>
                             <i class="pin"></i>
                         </li>
+                        <li class="pos10">
+                            <strong>Lagoa de São Francisco</strong>
+                            <i class="pin"></i>
+                        </li>
+                        <li class="pos11">
+                            <strong>Boqueirão do Piauí</strong>
+                            <i class="pin"></i>
+                        </li>
                     </ul>
 
                 </div>

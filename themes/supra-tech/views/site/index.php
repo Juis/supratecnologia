@@ -334,7 +334,7 @@ Atenção Básica</h1>
                                   </a>
                               </li>
                               <li>
-                                  <a href="novidades" title="Novidades">
+                                  <a href="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/../../index#bloco-conteudo'); ?>" title="Novidades">
                                       NOVIDADES
                                   </a>
                               </li>
