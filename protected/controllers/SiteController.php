@@ -52,7 +52,7 @@ class SiteController extends Controller
         $dataProvider = new CActiveDataProvider('Noticia', array(
                                 'criteria' => $criteria,
                                 'pagination'=>array(
-                                    'pageSize'=>1,
+                                    'pageSize'=>4,
                                 ),
                             )
                         );
@@ -234,7 +234,7 @@ class SiteController extends Controller
         $dataProvider = new CActiveDataProvider('Noticia', array(
                                 'criteria' => $criteria,
                                 'pagination'=>array(
-                                    'pageSize'=>1,
+                                    'pageSize'=>4,
                                 ),
                             )
                         );
