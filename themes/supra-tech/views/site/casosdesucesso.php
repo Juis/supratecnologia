@@ -19,7 +19,7 @@
                         
                     <ul class="nostyle listfloat">
                         <li class="pos1">
-                            <strong>Parnaíba</strong>
+                            <strong>Parna&iacute;ba</strong>
                             <i class="pin"></i>
                         </li>
                         <li class="pos2">
@@ -31,11 +31,11 @@
                             <i class="pin"></i>
                         </li>
                         <li class="pos4">
-                            <strong>Simplício Mendes</strong>
+                            <strong>Simpl&iacute;cio Mendes</strong>
                             <i class="pin"></i>
                         </li>
                         <li class="pos5">
-                            <strong>São João</strong>
+                            <strong>S&atilde;o Jo&atilde;o do Piau&iacute;</strong>
                             <i class="pin"></i>
                         </li>
                         <li class="pos6">
@@ -55,11 +55,19 @@
                             <i class="pin"></i>
                         </li>
                         <li class="pos10">
-                            <strong>Lagoa de São Francisco</strong>
+                            <strong>Lagoa de S&atilde;o Francisco</strong>
                             <i class="pin"></i>
                         </li>
                         <li class="pos11">
-                            <strong>Boqueirão do Piauí</strong>
+                            <strong>Boqueir&atilde;o do Piau&iacute;</strong>
+                            <i class="pin"></i>
+                        </li>
+                        <li class="pos12">
+                            <strong>Cocal de Telha</strong>
+                            <i class="pin"></i>
+                        </li>
+                        <li class="pos13">
+                            <strong>Boa Hora</strong>
                             <i class="pin"></i>
                         </li>
                     </ul>
