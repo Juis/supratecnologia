@@ -22,34 +22,37 @@
 
                       <!-- Item 2 -->
 
-                      <article class="item item2 item--image"> <a href="regulacaodemarcacaoconsultasexames">
+                      <article class="item item2 item--image"><a href="webmapasdadengue">
+                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-webdengue.jpg'); ?>"> 
+                            <div class="item__content">
+                              <div class="item__content__inner">
+                                <header>
+                                  <h1 class="item__header text-seperator">Web Mapas da Dengue</h1>
+
+                                </header>
+                                <p class="item__copy"></p>
+                              </div>
+                            </div>
+                            </div>
+                          </a> </article>
+
+                      <!-- Item 3 -->
+
+                      <article class="item item3 item--image">
+                        <a href="regulacaodemarcacaoconsultasexames">
                         <div class="wrap"> <img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-agendar.jpg'); ?>" >
                           <div class="item__content">
                             <div class="item__content__inner">
                               <header>
-                                <h1 class="item__header text-seperator">Regulação e Marcação de Consultas e Exames</h1>
+                                <h1 class="item__header text-seperator">Regulação de Consultas e Exames</h1>
 
                               </header>
 
                             </div>
                           </div>
                           </div>
-                        </a> </article>
-
-                      <!-- Item 3 -->
-
-                      <article class="item item3 item--image"> <a href="prontuariomedicoambulatorial">
-                        <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-prontuario.jpg'); ?>">
-                          <div class="item__content">
-                            <div class="item__content__inner">
-                              <header>
-                                <h1 class="item__header text-seperator">Prontuário Médico e SAME</h1>
-
-                              </header>
-                            </div>
-                          </div>
-                           </div>
-                        </a> </article>
+                        </a> 
+                      </article>
                     </div>
                     <!-- mask --> 
                   </div>
@@ -59,33 +62,37 @@
 
                       <!-- Item 1 -->
 
-                      <article class="item item1 item--image"> <a href="gestaodeautorizacaodeinternacaohospitalar">
-                        <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-aih.jpg'); ?>"> 
-                          <div class="item__content">
-                            <div class="item__content__inner">
-                              <header>
-                                <h1 class="item__header text-seperator">Gestão de AIH</h1>
+                      <article class="item item1 item--image"><a href="gestaodefarmacia">
+                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-gestfarmacia.jpg'); ?>">
+                            <div class="item__content">
+                              <div class="item__content__inner">
+                                <header>
+                                  <h1 class="item__header text-seperator">Gestão de Farmácia: Solução Atualizada</h1>
 
-                              </header>
+                                </header>
+
+                              </div>
                             </div>
-                          </div>
-                          </div>
-                        </a> </article>
+                             </div>
+                          </a> </article>
 
                       <!-- Item 2 -->
 
-                      <article class="item item2 item--image"> <a href="monitoramentodosindicesdopmaq">
-                        <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-indicemonitoramento.jpg'); ?>">
-                          <div class="item__content">
-                            <div class="item__content__inner">
-                              <header>
-                                <h1 class="item__header text-seperator">Monitoramento dos índices do PMAQ</h1>
+                      <article class="item item2 item--image">
+                        <a href="gestaodotratamentoforadedomiciliotfd">
+                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-tfd.jpg'); ?>">
+                            <div class="item__content">
+                              <div class="item__content__inner">
+                                <header>
+                                  <h1 class="item__header text-seperator">Gestão do TFD</h1>
 
-                              </header>
+                                </header>
+
+                              </div>
                             </div>
-                          </div>
-                           </div>
-                        </a> </article>
+                            </div>
+                          </a> 
+                      </article>
 
                       <!-- Item 3 -->
 
@@ -109,22 +116,21 @@
                         <article class="item item3 no-item"><div class="wrap"></div></article>
 
                         <!-- Item 4-->
-                        <article class="item item4 item--image"> <a href="regulacaodeleitos">
-                          <div class="wrap">
-
-                            <img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-regleitos.jpg'); ?>">
-
+                        <article class="item item4 item--image"> 
+                          <a href="gestaodosagentesdesaude">
+                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-agentes.jpg'); ?>">
                             <div class="item__content">
                               <div class="item__content__inner">
                                 <header>
-                                  <h1 class="item__header text-seperator">Regulação de Leitos</h1>
+                                  <h1 class="item__header text-seperator">Gestão dos Agentes de Saúde</h1>
 
                                 </header>
 
                               </div>
                             </div>
                              </div>
-                          </a> </article>
+                          </a> 
+                        </article>
 
                       </div>
                   </div>
@@ -166,19 +172,23 @@
                     <div class="mask"> <!-- row3 mask --> 
 
                         <!-- Item 1 -->
-                        <article class="item item1 item--image"> <a href="gestaodotratamentoforadedomiciliotfd">
-                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-tfd.jpg'); ?>">
+                        <article class="item item1 item--image"> 
+                          <a href="georreferenciamentodaatencaobasica">
+                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-georref.jpg'); ?>">
                             <div class="item__content">
                               <div class="item__content__inner">
                                 <header>
-                                  <h1 class="item__header text-seperator">Gestão do Tratamento fora de domicílio</h1>
+                                  <h1 class="item__header text-seperator">Georrefenciamento da
+
+Atenção Básica</h1>
 
                                 </header>
 
                               </div>
                             </div>
-                            </div>
-                          </a> </article>
+                             </div>
+                          </a>
+                        </article>
 
 
                         <!-- Item 2 -->
@@ -204,35 +214,37 @@
 
                         <!-- Item 2 -->
 
-                        <article class="item item2 item--image"> <a href="gestaodefarmacia">
-                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-gestfarmacia.jpg'); ?>">
-                            <div class="item__content">
-                              <div class="item__content__inner">
-                                <header>
-                                  <h1 class="item__header text-seperator">Gestão da Farmácia</h1>
+                        <article class="item item2 item--image"> 
+                          <a href="gestaodeautorizacaodeinternacaohospitalar">
+                        <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-aih.jpg'); ?>"> 
+                          <div class="item__content">
+                            <div class="item__content__inner">
+                              <header>
+                                <h1 class="item__header text-seperator">Gestão de AIH</h1>
 
-                                </header>
-
-                              </div>
+                              </header>
                             </div>
-                             </div>
-                          </a> </article>
+                          </div>
+                          </div>
+                        </a> 
+                        </article>
 
                         <!-- Item 3 -->
 
-                        <article class="item item3 item--image"> <a href="gestaodosagentesdesaude">
-                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-agentes.jpg'); ?>">
-                            <div class="item__content">
-                              <div class="item__content__inner">
-                                <header>
-                                  <h1 class="item__header text-seperator">Gestão dos Agentes de Saúde com Tablet</h1>
+                        <article class="item item3 item--image"> 
+                          <a href="prontuariomedicoambulatorial">
+                        <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-prontuario.jpg'); ?>">
+                          <div class="item__content">
+                            <div class="item__content__inner">
+                              <header>
+                                <h1 class="item__header text-seperator">Prontuário Médico e SAME</h1>
 
-                                </header>
-
-                              </div>
+                              </header>
                             </div>
-                             </div>
-                          </a> </article>
+                          </div>
+                           </div>
+                        </a> 
+                        </article>
                       </div>
                       <!-- row3 mask --> 
                     </div>
@@ -242,37 +254,43 @@
 
                         <!-- Item 1 -->
 
-                        <article class="item item1 item--image"> <a href="georreferenciamentodaatencaobasica">
-                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-georref.jpg'); ?>">
+                        <article class="item item1 item--image">  
+                          <a href="regulacaodeleitos">
+                          <div class="wrap">
+
+                            <img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-regleitos.jpg'); ?>">
+
                             <div class="item__content">
                               <div class="item__content__inner">
                                 <header>
-                                  <h1 class="item__header text-seperator">Georrefenciamento da
-
-Atenção Básica</h1>
+                                  <h1 class="item__header text-seperator">Regulação de Leitos</h1>
 
                                 </header>
 
                               </div>
                             </div>
                              </div>
-                          </a> </article>
+                          </a> 
+                        </article>
 
                         <!-- Item 2 -->
 
-                        <article class="item item2 item--image"> <a href="webmapasdadengue">
-                          <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-webdengue.jpg'); ?>"> 
-                            <div class="item__content">
-                              <div class="item__content__inner">
-                                <header>
-                                  <h1 class="item__header text-seperator">Web Mapas da Dengue</h1>
+                        <article class="item item2 item--image">
+                          
+                           <a href="monitoramentodosindicesdopmaq">
+                        <div class="wrap"><img class="item__image" src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-indicemonitoramento.jpg'); ?>">
+                          <div class="item__content">
+                            <div class="item__content__inner">
+                              <header>
+                                <h1 class="item__header text-seperator">Monitoramento dos índices do PMAQ</h1>
 
-                                </header>
-                                <p class="item__copy"></p>
-                              </div>
+                              </header>
                             </div>
-                            </div>
-                          </a> </article>
+                          </div>
+                           </div>
+                        </a> 
+
+                        </article>
 
                         <!-- Item 3 -->
 

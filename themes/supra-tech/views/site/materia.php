@@ -85,4 +85,7 @@
 
      </section>
 
+
+     <div id="up_button" class="sticky-up"><a href="#doc-topo"><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/up.png'); ?>" class="pulse"></a></div>
+
 </div><!-- fim do content -->
