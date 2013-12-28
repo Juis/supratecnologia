@@ -67,7 +67,7 @@
                             <div class="item__content">
                               <div class="item__content__inner">
                                 <header>
-                                  <h1 class="item__header text-seperator">Gestão de Farmácia: Solução Atualizada</h1>
+                                  <h1 class="item__header text-seperator">Gestão de Farmácia</h1>
 
                                 </header>
 
