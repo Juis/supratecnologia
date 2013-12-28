@@ -54,23 +54,87 @@ promoção da saúde de seu município.</p>
                     </div>
 
                 </li>
-
+                
                 <li class="grid-6">
 
-                     <figure class="grid-2 nml">
-                        <a href="prontuariomedicoambulatorial" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-prontuario.jpg'); ?>" width="140" height="125" alt=""></a>
+                    <figure class="grid-2 nml">
+                        <a href="gestaodefarmacia" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-gestfarmacia.jpg'); ?>" width="140" height="125" alt=""></a>
                     </figure>
 
                     <div class="grid-4">
-                         <h3 class="fullWidth nmt mb10"><a href="prontuariomedicoambulatorial" title="">Prontuário Médico e SAME</a></h3>
-                <p class="descricao-modulo">Moderniza o atendimento médico ambulatorial através do Prontuário Eletrônico do paciente, onde é registrada a anamnese, a medicação prescrita e seu histórico;</p>
+                         <h3 class="fullWidth nmt mb10"><a href="gestaodefarmacia" title="">Gestão da Farmácia</a></h3>
+                <p class="descricao-modulo">Monitora todas as entradas e saídas de medicamentos e insumos ocorridas nos estabelecimentos, objetivando organização e redução de custos;</p>
 
-                    <a href="prontuariomedicoambulatorial" title="" class="btn">mais</a>
+                    <a href="gestaodefarmacia" title="" class="btn">mais</a>
 
                     </div>
 
                 </li>
+                
+                <li class="grid-6 nml">
 
+                     <figure class="grid-2 nml">
+                        <a href="webmapasdadengue" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-webdengue.jpg'); ?>" width="140" height="125" alt=""></a>
+                    </figure>
+
+                    <div class="grid-4">
+                         <h3 class="fullWidth nmt mb10"><a href="webmapasdadengue" title="">Web Mapas da Dengue</a></h3>
+                <p class="descricao-modulo">Moderniza o combate à dengue, visualizando em Web Mapas os bairros com maior número de casos e possibilita o combate da área, evitando o avanço para outras regiões;</p>
+
+                    <a href="webmapasdadengue" title="" class="btn">mais</a>
+
+                    </div>
+
+                </li>
+                
+                <li class="grid-6">
+
+                     <figure class="grid-2 nml">
+                        <a href="gestaodotratamentoforadedomiciliotfd" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-tfd.jpg'); ?>" width="140" height="125" alt=""></a>
+                    </figure>
+
+                    <div class="grid-4">
+                         <h3 class="fullWidth nmt mb10"><a href="gestaodotratamentoforadedomiciliotfd" title="">Gestão do Tratamento fora de domicílio (TFD)</a></h3>
+                <p class="descricao-modulo">Acompanha os gastos com pacientes encaminhados para tratamento em outros municípios, envolvendo transporte, alimentação, hospedagem, consultas, exames e cirurgias;</p>
+
+                    <a href="gestaodotratamentoforadedomiciliotfd" title="" class="btn">mais</a>
+
+                    </div>
+
+                </li>
+                
+                <li class="grid-6 nml">
+
+                     <figure class="grid-2 nml">
+                        <a href="gestaodosagentesdesaude" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-agentes.jpg'); ?>" width="140" height="125" alt=""></a>
+                    </figure>
+
+                    <div class="grid-4">
+                         <h3 class="fullWidth nmt mb10"><a href="gestaodosagentesdesaude" title="">Gestão dos Agentes de Saúde com Tablet</a></h3>
+                <p class="descricao-modulo">Moderniza o trabalho dos Agentes Comunitários, substituindo os papéis da FICHA-A pelo TABLET. Visualiza o horário e percurso realizado pelos Agentes em Web Mapas;</p>
+
+                    <a href="gestaodosagentesdesaude" title="" class="btn">mais</a>
+
+                    </div>
+
+                </li>
+                
+                <li class="grid-6">
+
+                    <figure class="grid-2 nml">
+                        <a href="georreferenciamentodaatencaobasica" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-georref.jpg'); ?>" width="140" height="125" alt=""></a>
+                    </figure>
+
+                    <div class="grid-4">
+                         <h3 class="fullWidth nmt mb10"><a href="georreferenciamentodaatencaobasica" title="">Georreferenciamento da Atenção Básica – SIAB</a></h3>
+                <p class="descricao-modulo">Transforma as informações do SIAB – Ficha A em informações Georreferenciadas, possibilitando a visualização em Web Mapas de dados referentes ao saneamento e a família;</p>
+
+                    <a href="georreferenciamentodaatencaobasica" title="" class="btn">mais</a>
+
+                    </div>
+
+                </li>
+                
                 <li class="grid-6 nml">
 
                     <figure class="grid-2 nml">
@@ -86,7 +150,7 @@ promoção da saúde de seu município.</p>
                     </div>
 
                 </li>
-
+                
                 <li class="grid-6">
 
                      <figure class="grid-2 nml">
@@ -105,6 +169,22 @@ promoção da saúde de seu município.</p>
 
                 <li class="grid-6 nml">
 
+                     <figure class="grid-2 nml">
+                        <a href="prontuariomedicoambulatorial" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-prontuario.jpg'); ?>" width="140" height="125" alt=""></a>
+                    </figure>
+
+                    <div class="grid-4">
+                         <h3 class="fullWidth nmt mb10"><a href="prontuariomedicoambulatorial" title="">Prontuário Médico e SAME</a></h3>
+                <p class="descricao-modulo">Moderniza o atendimento médico ambulatorial através do Prontuário Eletrônico do paciente, onde é registrada a anamnese, a medicação prescrita e seu histórico;</p>
+
+                    <a href="prontuariomedicoambulatorial" title="" class="btn">mais</a>
+
+                    </div>
+
+                </li>                
+
+                <li class="grid-6">
+
                     <figure class="grid-2 nml">
                         <a href="regulacaodeleitos" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-regleitos.jpg'); ?>" width="140" height="125" alt=""></a>
                     </figure>
@@ -114,86 +194,6 @@ promoção da saúde de seu município.</p>
                 <p class="descricao-modulo">Efetua a regulação da ocupação dos leitos disponíveis ao SUS, através da classificação de risco, do controle das entradas, permanências e saídas dos pacientes internados;</p>
 
                     <a href="regulacaodeleitos" title="" class="btn">mais</a>
-
-                    </div>
-
-                </li>
-
-                <li class="grid-6">
-
-                     <figure class="grid-2 nml">
-                        <a href="gestaodotratamentoforadedomiciliotfd" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-tfd.jpg'); ?>" width="140" height="125" alt=""></a>
-                    </figure>
-
-                    <div class="grid-4">
-                         <h3 class="fullWidth nmt mb10"><a href="gestaodotratamentoforadedomiciliotfd" title="">Gestão do Tratamento fora de domicílio (TFD)</a></h3>
-                <p class="descricao-modulo">Acompanha os gastos com pacientes encaminhados para tratamento em outros municípios, envolvendo transporte, alimentação, hospedagem, consultas, exames e cirurgias;</p>
-
-                    <a href="gestaodotratamentoforadedomiciliotfd" title="" class="btn">mais</a>
-
-                    </div>
-
-                </li>
-
-                <li class="grid-6 nml">
-
-                    <figure class="grid-2 nml">
-                        <a href="gestaodefarmacia" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-gestfarmacia.jpg'); ?>" width="140" height="125" alt=""></a>
-                    </figure>
-
-                    <div class="grid-4">
-                         <h3 class="fullWidth nmt mb10"><a href="gestaodefarmacia" title="">Gestão da Farmácia</a></h3>
-                <p class="descricao-modulo">Monitora todas as entradas e saídas de medicamentos e insumos ocorridas nos estabelecimentos, objetivando organização e redução de custos;</p>
-
-                    <a href="gestaodefarmacia" title="" class="btn">mais</a>
-
-                    </div>
-
-                </li>
-
-                <li class="grid-6">
-
-                     <figure class="grid-2 nml">
-                        <a href="gestaodosagentesdesaude" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-agentes.jpg'); ?>" width="140" height="125" alt=""></a>
-                    </figure>
-
-                    <div class="grid-4">
-                         <h3 class="fullWidth nmt mb10"><a href="gestaodosagentesdesaude" title="">Gestão dos Agentes de Saúde com Tablet</a></h3>
-                <p class="descricao-modulo">Moderniza o trabalho dos Agentes Comunitários, substituindo os papéis da FICHA-A pelo TABLET. Visualiza o horário e percurso realizado pelos Agentes em Web Mapas;</p>
-
-                    <a href="gestaodosagentesdesaude" title="" class="btn">mais</a>
-
-                    </div>
-
-                </li>
-
-                <li class="grid-6 nml">
-
-                    <figure class="grid-2 nml">
-                        <a href="georreferenciamentodaatencaobasica" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-georref.jpg'); ?>" width="140" height="125" alt=""></a>
-                    </figure>
-
-                    <div class="grid-4">
-                         <h3 class="fullWidth nmt mb10"><a href="georreferenciamentodaatencaobasica" title="">Georreferenciamento da Atenção Básica – SIAB</a></h3>
-                <p class="descricao-modulo">Transforma as informações do SIAB – Ficha A em informações Georreferenciadas, possibilitando a visualização em Web Mapas de dados referentes ao saneamento e a família;</p>
-
-                    <a href="georreferenciamentodaatencaobasica" title="" class="btn">mais</a>
-
-                    </div>
-
-                </li>
-
-                <li class="grid-6">
-
-                     <figure class="grid-2 nml">
-                        <a href="webmapasdadengue" title=""><img src="<?php echo CHtml::encode(Yii::app()->theme->baseUrl.'/img/img-modulos/img-webdengue.jpg'); ?>" width="140" height="125" alt=""></a>
-                    </figure>
-
-                    <div class="grid-4">
-                         <h3 class="fullWidth nmt mb10"><a href="webmapasdadengue" title="">Web Mapas da Dengue</a></h3>
-                <p class="descricao-modulo">Moderniza o combate à dengue, visualizando em Web Mapas os bairros com maior número de casos e possibilita o combate da área, evitando o avanço para outras regiões;</p>
-
-                    <a href="webmapasdadengue" title="" class="btn">mais</a>
 
                     </div>
 
